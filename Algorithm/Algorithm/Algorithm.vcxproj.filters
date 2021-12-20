@@ -24,5 +24,8 @@
     <ClCompile Include="10448 - 유레카 이론.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
     </ClCompile>
+    <ClCompile Include="2503 - 숫자 야구.cpp">
+      <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
