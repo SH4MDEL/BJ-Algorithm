@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\Bruteforce">
       <UniqueIdentifier>{e251b04e-72ad-4fad-8797-e66ae9c4f620}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Greedy">
+      <UniqueIdentifier>{e9db3df6-899c-4eb2-bff0-1967057f427e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -26,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="2503 - 숫자 야구.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="4796 - 캠핑.cpp">
+      <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
