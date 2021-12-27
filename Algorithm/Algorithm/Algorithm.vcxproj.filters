@@ -19,7 +19,7 @@
     <Filter Include="소스 파일\Greedy">
       <UniqueIdentifier>{e9db3df6-899c-4eb2-bff0-1967057f427e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Basic Math 1">
+    <Filter Include="소스 파일\Basic Math">
       <UniqueIdentifier>{06d17853-4398-483e-8912-5b61930a5e8d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -43,7 +43,10 @@
       <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1011 - Fly me to the Alpha Centauri.cpp">
-      <Filter>소스 파일\Basic Math 1</Filter>
+      <Filter>소스 파일\Basic Math</Filter>
+    </ClCompile>
+    <ClCompile Include="3009 - 네 번째 점.cpp">
+      <Filter>소스 파일\Basic Math</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
