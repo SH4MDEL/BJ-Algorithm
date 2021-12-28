@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\Basic Math">
       <UniqueIdentifier>{06d17853-4398-483e-8912-5b61930a5e8d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Divide and Conquer">
+      <UniqueIdentifier>{60ee979a-b075-435a-a621-e38450bb58be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -53,6 +56,9 @@
     </ClCompile>
     <ClCompile Include="1931 - 회의실 배정.cpp">
       <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1629 - 곱셈.cpp">
+      <Filter>소스 파일\Divide and Conquer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

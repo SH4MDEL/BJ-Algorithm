@@ -75,9 +75,6 @@ int main()
 		merge_sort(data, start, count - 1, 0);
 	}
 	for (int i = 0; i < count; i++) {
-		printf("%d %d\n", data[i][0], data[i][1]);
-	}
-	for (int i = 0; i < count; i++) {
 		if (last <= data[i][0]) {
 			able++;
 			last = data[i][1];
