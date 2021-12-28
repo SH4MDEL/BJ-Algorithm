@@ -60,5 +60,8 @@
     <ClCompile Include="1629 - 곱셈.cpp">
       <Filter>소스 파일\Divide and Conquer</Filter>
     </ClCompile>
+    <ClCompile Include="2104 - 부분배열 고르기.cpp">
+      <Filter>소스 파일\Divide and Conquer</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
