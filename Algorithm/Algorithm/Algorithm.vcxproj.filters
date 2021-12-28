@@ -63,5 +63,8 @@
     <ClCompile Include="2104 - 부분배열 고르기.cpp">
       <Filter>소스 파일\Divide and Conquer</Filter>
     </ClCompile>
+    <ClCompile Include="6549 - 히스토그램에서 가장 큰 직사각형.cpp">
+      <Filter>소스 파일\Divide and Conquer</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
