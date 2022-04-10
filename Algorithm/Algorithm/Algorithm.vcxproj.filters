@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\Divide and Conquer">
       <UniqueIdentifier>{60ee979a-b075-435a-a621-e38450bb58be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Priority Queue">
+      <UniqueIdentifier>{8b56e5c0-c871-4104-98d4-5f067803afa3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -74,6 +77,9 @@
     </ClCompile>
     <ClCompile Include="11000 - 강의실 배정.cpp">
       <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1655 - 가운데를 말해요.cpp">
+      <Filter>소스 파일\Priority Queue</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

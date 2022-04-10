@@ -49,14 +49,12 @@ int main()
 		Pair room = rooms.top();
 		rooms.pop();
 		if (room.end <= table.start) {
-			std::cout << room.end << "보다" << table.start << "이 크다" << std::endl;
 			room.end = table.end;
 			rooms.push(room);
 		}
 		else {
 			rooms.push(room);
 			rooms.push(Pair(table.start, table.end));
-			std::cout << table.start << "보다" << room.end << "이 크므로 방 하나 더 생성" << std::endl;
 		}
 	}
 	std::cout << rooms.size();
