@@ -81,5 +81,8 @@
     <ClCompile Include="1655 - 가운데를 말해요.cpp">
       <Filter>소스 파일\Priority Queue</Filter>
     </ClCompile>
+    <ClCompile Include="11279 - 최대 힙.cpp">
+      <Filter>소스 파일\Priority Queue</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
