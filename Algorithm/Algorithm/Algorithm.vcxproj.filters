@@ -90,5 +90,8 @@
     <ClCompile Include="11286 - 절댓값 힙.cpp">
       <Filter>소스 파일\Priority Queue</Filter>
     </ClCompile>
+    <ClCompile Include="1715 - 카드 정렬하기.cpp">
+      <Filter>소스 파일\Priority Queue</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
