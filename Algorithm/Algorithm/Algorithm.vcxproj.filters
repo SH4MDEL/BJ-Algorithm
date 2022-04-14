@@ -28,6 +28,12 @@
     <Filter Include="소스 파일\Priority Queue">
       <UniqueIdentifier>{8b56e5c0-c871-4104-98d4-5f067803afa3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Dynamic Programming">
+      <UniqueIdentifier>{ff814fdb-3017-4762-83ab-cbcea2f7c679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Segment Tree">
+      <UniqueIdentifier>{727c7edd-05b5-4c41-a591-6aa74adc5ff4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -92,6 +98,12 @@
     </ClCompile>
     <ClCompile Include="1715 - 카드 정렬하기.cpp">
       <Filter>소스 파일\Priority Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="2042 - 구간 합 구하기.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="2193 - 이친수.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
