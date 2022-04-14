@@ -120,5 +120,8 @@
     <ClCompile Include="18870 - 좌표 압축.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
+    <ClCompile Include="7662 - 이중 우선순위 큐.cpp">
+      <Filter>소스 파일\Priority Queue</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
