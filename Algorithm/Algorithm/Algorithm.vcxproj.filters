@@ -34,6 +34,9 @@
     <Filter Include="소스 파일\Segment Tree">
       <UniqueIdentifier>{727c7edd-05b5-4c41-a591-6aa74adc5ff4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\미분류">
+      <UniqueIdentifier>{8f3a04ce-6dda-4f5c-a711-4ee40f221fec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -110,6 +113,12 @@
     </ClCompile>
     <ClCompile Include="11726 - 2xn 타일링.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="11727 - 2xn 타일링 2.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="18870 - 좌표 압축.cpp">
+      <Filter>소스 파일\미분류</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
