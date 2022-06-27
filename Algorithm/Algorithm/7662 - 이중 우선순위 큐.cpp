@@ -9,8 +9,7 @@ std::string inputstr;
 
 int main()
 {
-	std::cin.tie(NULL);
-	std::ios::sync_with_stdio(false);
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
 	std::cin >> testcase;
 	for (int i = 0; i < testcase; ++i) {

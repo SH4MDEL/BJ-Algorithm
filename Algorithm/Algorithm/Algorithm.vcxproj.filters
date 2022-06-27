@@ -37,6 +37,12 @@
     <Filter Include="소스 파일\미분류">
       <UniqueIdentifier>{8f3a04ce-6dda-4f5c-a711-4ee40f221fec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Backtracking">
+      <UniqueIdentifier>{19a6c88e-de25-49a3-b9a8-59d2a275f770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Binary Search">
+      <UniqueIdentifier>{606d052f-3961-4b19-9024-2879bbbb2313}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -124,6 +130,12 @@
       <Filter>소스 파일\Priority Queue</Filter>
     </ClCompile>
     <ClCompile Include="9465 - 스티커.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="2294 - 동전 2.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="11660 - 구간 합 구하기 5.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
   </ItemGroup>
