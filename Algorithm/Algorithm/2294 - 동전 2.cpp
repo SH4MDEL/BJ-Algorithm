@@ -3,8 +3,8 @@
 #define inf 987654321
 
 int N, K;
-int data[100];
-int cache[10001];
+int data[111];
+int cache[111111];
 
 int solve(int k)
 {
@@ -28,7 +28,7 @@ int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	for (int i = 0; i < 10001; ++i) {
+	for (int i = 0; i < 110000; ++i) {
 		cache[i] = -1;
 	}
 
@@ -37,5 +37,10 @@ int main()
 		std::cin >> data[i];
 		cache[data[i]] = 1;
 	}
-	std::cout << solve(K);
+	if (solve(K) == inf) {
+		std::cout << -1 << endl;
+	}
+	else {
+		std::cout << solve(K);
+	}
 }
