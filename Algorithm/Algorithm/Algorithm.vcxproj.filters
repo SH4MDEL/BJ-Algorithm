@@ -46,6 +46,9 @@
     <Filter Include="소스 파일\Graph">
       <UniqueIdentifier>{ab65e918-d465-469c-9363-7b4fe18a8891}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\trie">
+      <UniqueIdentifier>{e0465245-6c18-4b4a-88a6-ad67920608fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -149,6 +152,12 @@
     </ClCompile>
     <ClCompile Include="1932 - 정수 삼각형.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="2407 - 조합.cpp">
+      <Filter>소스 파일\Basic Math</Filter>
+    </ClCompile>
+    <ClCompile Include="5052 - 전화번호 목록.cpp">
+      <Filter>소스 파일\trie</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
