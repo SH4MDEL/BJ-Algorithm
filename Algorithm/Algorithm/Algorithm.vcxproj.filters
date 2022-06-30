@@ -49,6 +49,9 @@
     <Filter Include="소스 파일\trie">
       <UniqueIdentifier>{e0465245-6c18-4b4a-88a6-ad67920608fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\bitmask">
+      <UniqueIdentifier>{9898eff7-a7c4-4c2a-aeaf-3c450a4362b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -162,5 +165,13 @@
     <ClCompile Include="1764 - 듣보잡.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
+    <ClCompile Include="1194 - 달이 차오른다, 가자.cpp">
+      <Filter>소스 파일\bitmask</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bitmask.txt">
+      <Filter>소스 파일\bitmask</Filter>
+    </Text>
   </ItemGroup>
 </Project>
