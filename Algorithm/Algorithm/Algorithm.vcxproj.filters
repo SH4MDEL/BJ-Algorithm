@@ -177,6 +177,9 @@
     <ClCompile Include="2667 - 단지번호붙이기.cpp">
       <Filter>소스 파일\DFS</Filter>
     </ClCompile>
+    <ClCompile Include="10026 - 적록색약.cpp">
+      <Filter>소스 파일\DFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
