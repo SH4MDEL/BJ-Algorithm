@@ -58,6 +58,9 @@
     <Filter Include="소스 파일\DFS">
       <UniqueIdentifier>{ad79135f-df4e-4856-8b2c-7949c17cf450}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Sort">
+      <UniqueIdentifier>{59131106-4634-4aeb-95ea-a25b43ab8423}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -185,6 +188,9 @@
     </ClCompile>
     <ClCompile Include="11054 - 가장 긴 바이토닉 부분 수열.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="16496 - 큰 수 만들기.cpp">
+      <Filter>소스 파일\Sort</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
