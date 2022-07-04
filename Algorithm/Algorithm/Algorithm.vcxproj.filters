@@ -198,6 +198,9 @@
     <ClCompile Include="test.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
+    <ClCompile Include="2178 - 미로 탐색.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
