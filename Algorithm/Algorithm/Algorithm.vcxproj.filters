@@ -210,6 +210,9 @@
     <ClCompile Include="1697 - 숨바꼭질.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="12851 - 숨바꼭질2.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
