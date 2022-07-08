@@ -222,6 +222,9 @@
     <ClCompile Include="7569 - 토마토.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="2357 - 최솟값과 최댓값.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

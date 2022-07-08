@@ -60,7 +60,7 @@ int main()
 	}
 	init(arr, segtree, 1, 0, n - 1);
 
-	int query, a, b;
+	long long query, a, b;
 	for (int i = 0; i < m + k; ++i) {
 		cin >> query >> a >> b;
 		if (query == 1) {
