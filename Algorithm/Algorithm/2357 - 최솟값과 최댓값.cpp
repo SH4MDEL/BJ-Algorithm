@@ -49,6 +49,8 @@ int max_find(vector<int>& tree, int node, int start, int end, int left, int righ
 
 int main()
 {
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+
 	int n, m;
 	cin >> n >> m;
 	vector<int> arr(n);
