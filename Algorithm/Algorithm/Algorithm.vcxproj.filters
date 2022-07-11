@@ -243,6 +243,9 @@
     <ClCompile Include="3006 - 터보소트.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
+    <ClCompile Include="2166 - 다각형의 면적.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
