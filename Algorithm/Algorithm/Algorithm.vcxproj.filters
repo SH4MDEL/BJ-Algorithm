@@ -231,6 +231,9 @@
     <ClCompile Include="12837 - 가계부 (Hard).cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
+    <ClCompile Include="10868 - 최솟값.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
