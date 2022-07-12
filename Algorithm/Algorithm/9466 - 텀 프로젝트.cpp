@@ -9,14 +9,20 @@ struct Status {
 	int select;
 	bool visited;
 	bool finished;
+	bool cycle;
 	Status() {
 		select = 0;
 		visited = false;
 		finished = false;
+		cycle = false;
 	}
 };
+Status status[100010];
 
-void dfs(vector<Status>& status, int next)
+
+int t, n, cnt;
+
+void dfs(int next)
 {
 	if (status[next].finished) {
 		status[next].visited = false;
@@ -27,24 +33,31 @@ void dfs(vector<Status>& status, int next)
 		int count = status[next].select;
 		while (count != next) {
 			status[count].visited = false;
-			status[count].finished = true;
+			if (!status[count].finished) {
+				status[count].finished = true;
+				++cnt;
+			}
 			count = status[count].select;
 		}
 		status[next].visited = false;
-		status[next].finished = true;
+		if (!status[next].finished) {
+			status[next].finished = true;
+			++cnt;
+		}
 		return;
 	}
 
 	status[next].visited = true;
 
-	dfs(status, status[next].select);
+	if (!status[next].cycle) {
+		dfs(status[next].select);
+		status[next].cycle = true;
+	}
 
 	status[next].visited = false;
 	return;
 
 }
-
-int t, n;
 
 int main()
 {
@@ -52,28 +65,25 @@ int main()
 
 	cin >> t;
 	for (int i = 0; i < t; ++i) {
-		vector<Status> status;
+
 		cin >> n;
-		status.resize(n);
+
+		cnt = 0;
+		Status inputdata;
+		fill(status, status + n, inputdata);
+
 		for (int j = 0; j < n; ++j) {
 			cin >> status[j].select;
-			status[j].select -= 1;
+			--status[j].select;
 		}
 		for (int j = 0; j < n; ++j) {
 			if (!status[j].finished) {
 				status[j].visited = true;
-				dfs(status, status[j].select);
+				dfs(status[j].select);
 				status[j].visited = false;
 			}
 		}
-
-		int count = 0;
-		for (int j = 0; j < n; ++j) {
-			if (!status[j].finished) {
-				++count;
-			}
-		}
-		cout << count << endl;
+		cout << n - cnt << endl;
 	}
 
 }
