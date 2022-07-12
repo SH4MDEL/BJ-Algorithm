@@ -32,7 +32,7 @@ void update(vector<long long>& tree, int node, int start, int end, int index, lo
 	if (index < start || index > end) return;
 
 	tree[node] += diff;
-	
+
 	if (start != end) {
 		int mid = (start + end) / 2;
 		update(tree, node * 2, start, mid, index, diff);
@@ -40,18 +40,18 @@ void update(vector<long long>& tree, int node, int start, int end, int index, lo
 	}
 }
 
-
-
 int main()
 {
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+
 	cin >> t;
 	for (int i = 0; i < t; ++i) {
 		cin >> n >> m;
 		vector<long long> answer;
 		answer.reserve(m);
-		vector <long long> arr(n, 1);
-		arr.resize(n * m);
-		vector <long long> segtree((n + m) * 4);
+		vector<long long> arr(n, 1);
+		arr.resize(n + m);
+		vector<long long> segtree((n + m) * 4);
 		init(arr, segtree, 1, 0, n + m - 1);
 
 		for (int j = n - 1; auto& elm : arr) {
