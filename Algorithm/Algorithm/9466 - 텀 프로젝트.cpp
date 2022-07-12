@@ -23,7 +23,6 @@ void dfs(vector<Status>& status, int next)
 		return;
 	}
 	if (status[next].visited) {
-		status[next].visited = false;
 
 		int count = status[next].select;
 		while (count != next) {
@@ -49,6 +48,8 @@ int t, n;
 
 int main()
 {
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+
 	cin >> t;
 	for (int i = 0; i < t; ++i) {
 		vector<Status> status;
