@@ -267,8 +267,8 @@
     <ClCompile Include="1753 - 최단경로.cpp">
       <Filter>소스 파일\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="9935 - 문자열 폭발.cpp">
-      <Filter>소스 파일\미분류</Filter>
+    <ClCompile Include="2206 - 벽 부수고 이동하기.cpp">
+      <Filter>소스 파일\BFS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
