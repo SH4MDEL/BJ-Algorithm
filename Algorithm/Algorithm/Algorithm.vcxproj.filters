@@ -252,6 +252,9 @@
     <ClCompile Include="9466 - 텀 프로젝트.cpp">
       <Filter>소스 파일\DFS</Filter>
     </ClCompile>
+    <ClCompile Include="4179  - 불!.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
