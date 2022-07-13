@@ -261,6 +261,9 @@
     <ClCompile Include="15652 - N과 M %284%29.cpp">
       <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
+    <ClCompile Include="15651 - N과 M (3).cpp">
+      <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
