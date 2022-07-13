@@ -219,9 +219,6 @@
     <ClCompile Include="3055 - 탈출.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
-    <ClCompile Include="7569 - 토마토.cpp">
-      <Filter>소스 파일\BFS</Filter>
-    </ClCompile>
     <ClCompile Include="2357 - 최솟값과 최댓값.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
@@ -252,7 +249,7 @@
     <ClCompile Include="9466 - 텀 프로젝트.cpp">
       <Filter>소스 파일\DFS</Filter>
     </ClCompile>
-    <ClCompile Include="4179  - 불!.cpp">
+    <ClCompile Include="4179 - 불!.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
     <ClCompile Include="15650 - N과 M (2).cpp">
@@ -264,8 +261,14 @@
     <ClCompile Include="15651 - N과 M (3).cpp">
       <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
-    <ClCompile Include="15654 - N과 M (5).cpp">
+    <ClCompile Include="15657 - N과 M %288%29.cpp">
       <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="1753 - 최단경로.cpp">
+      <Filter>소스 파일\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="9935 - 문자열 폭발.cpp">
+      <Filter>소스 파일\미분류</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -1,12 +1,14 @@
 #include <iostream>
+#include <cmath>
+#include <string>
 #define endl "\n"
 using namespace std;
 
 int N, M;
 
-long long cache[110][110];
+__uint128_t cache[110][110];
 
-long long comb(int n, int m)
+__uint128_t comb(int n, int m)
 {
 	if (cache[n][m] != -1) {
 		return cache[n][m];
@@ -28,6 +30,16 @@ int main()
 	}
 
 	cin >> N >> M;
-	cout << comb(N, M) << endl;
+	__uint128_t result = comb(N, M);
+	string r = "";
+	string f = to_string((long long)(result / (__uint128_t)pow(10, 15)));
+	string s = to_string((long long)(result % (__uint128_t)pow(10, 15)));
+	if (f == "0") {
+		r = s;
+	}
+	else {
+		r = f + s;
+	}
+	cout << r << endl;
 	
 }
