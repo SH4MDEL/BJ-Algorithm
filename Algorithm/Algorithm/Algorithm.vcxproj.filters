@@ -273,6 +273,9 @@
     <ClCompile Include="9251 - LCS.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="15653 - N과 M (5).cpp">
+      <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
