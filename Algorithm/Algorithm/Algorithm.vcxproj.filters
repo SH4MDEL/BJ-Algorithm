@@ -61,6 +61,9 @@
     <Filter Include="소스 파일\Sort">
       <UniqueIdentifier>{59131106-4634-4aeb-95ea-a25b43ab8423}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Djikstra">
+      <UniqueIdentifier>{95245f0d-6a04-4a10-beba-f495aeffd200}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -264,9 +267,6 @@
     <ClCompile Include="15657 - N과 M %288%29.cpp">
       <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
-    <ClCompile Include="1753 - 최단경로.cpp">
-      <Filter>소스 파일\Graph</Filter>
-    </ClCompile>
     <ClCompile Include="2206 - 벽 부수고 이동하기.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
@@ -281,6 +281,9 @@
     </ClCompile>
     <ClCompile Include="11404 - 플로이드.cpp">
       <Filter>소스 파일\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="1753 - 최단경로.cpp">
+      <Filter>소스 파일\Djikstra</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
