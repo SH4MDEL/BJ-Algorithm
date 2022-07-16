@@ -294,6 +294,9 @@
     <ClCompile Include="1238 - 파티.cpp">
       <Filter>소스 파일\Djikstra</Filter>
     </ClCompile>
+    <ClCompile Include="10999 - 구간 합 구하기 2.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
