@@ -297,6 +297,12 @@
     <ClCompile Include="10999 - 구간 합 구하기 2.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
+    <ClCompile Include="16975 - 수열과 쿼리 21.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="18436 - 수열과 쿼리 37.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
