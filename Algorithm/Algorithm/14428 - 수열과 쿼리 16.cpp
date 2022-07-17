@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <vector>
 #define endl "\n"
-#define inf 987654321
+#define inf 1087654321
 using namespace std;
 
 int n, m;
@@ -27,7 +27,6 @@ int update(vector<int>& arr, vector<int>& tree, int node, int start, int end, in
 	if (start == end) {
 		return tree[node] = index;
 	}
-
 
 	int mid = (start + end) / 2;
 	int a = update(arr, tree, node * 2, start, mid, index);
