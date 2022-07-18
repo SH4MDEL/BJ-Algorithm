@@ -138,5 +138,5 @@ int main()
 
 	Answer_Data ad = find_answer(arr, sumtree, mintree, 1, 0, n - 1);
 	cout << ad.num << endl;
-	cout << ad.start << " " << ad.end << endl;
+	cout << ad.start + 1 << " " << ad.end + 1 << endl;
 }
