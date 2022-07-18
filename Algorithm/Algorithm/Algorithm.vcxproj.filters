@@ -306,6 +306,9 @@
     <ClCompile Include="2104 - 부분배열 고르기.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
+    <ClCompile Include="1989 - 부분배열 고르기 2.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
