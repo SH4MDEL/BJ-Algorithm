@@ -5,22 +5,28 @@
 #define inf 987654321
 using namespace std;
 
+int n;
+
 long long init_sum(vector<long long>& arr, vector<long long>& tree, int node, int start, int end)
 {
 	if (start == end) {
-		return tree[node] = start;
+		return tree[node] = arr[start];
 	}
 	int mid = (start + end) / 2;
 	return tree[node] = init_sum(arr, tree, node * 2, start, mid) + init_sum(arr, tree, node * 2 + 1, mid + 1, end);
 }
 
-long long init_min(vector<long long>& arr, vector<long long>& tree, int node, int start, int end)
+int init_min(vector<long long>& arr, vector<int>& tree, int node, int start, int end)
 {
-	if (start == end) {
-		return tree[node] = start;
-	}
+	if (start == end) return tree[node] = start;
+
 	int mid = (start + end) / 2;
-	return tree[node] = min(init_sum(arr, tree, node * 2, start, mid), init_sum(arr, tree, node * 2 + 1, mid + 1, end));
+
+	int a = init_min(arr, tree, node * 2, start, mid);
+	int b = init_min(arr, tree, node * 2 + 1, mid + 1, end);
+	if (arr[a] > arr[b]) return tree[node] = b;
+	if (arr[a] < arr[b]) return tree[node] = a;
+	return tree[node] = min(a, b);
 }
 
 long long find_sum(vector<long long>& tree, int node, int start, int end, int left, int right)
@@ -33,39 +39,50 @@ long long find_sum(vector<long long>& tree, int node, int start, int end, int le
 	return find_sum(tree, node * 2, start, mid, left, right) + find_sum(tree, node * 2 + 1, mid + 1, end, left, right);
 }
 
-long long find_min(vector<long long>& tree, int node, int start, int end, int left, int right)
+int find_min(vector<long long>& arr, vector<int>& tree, int node, int start, int end, int left, int right)
 {
-	if (left > end || right < start) return inf;
+	if (left > end || right < start) return n;
 
 	if (left <= start && end <= right) return tree[node];
 
 	int mid = (start + end) / 2;
-	return min(find_min(tree, node * 2, start, mid, left, right), find_min(tree, node * 2 + 1, mid + 1, end, left, right));
+
+	int a = find_min(arr, tree, node * 2, start, mid, left, right);
+	int b = find_min(arr, tree, node * 2 + 1, mid + 1, end, left, right);
+	if (arr[a] > arr[b]) return b;
+	if (arr[a] < arr[b]) return a;
+	return min(a, b);
 }
 
-long long init_seg(vector<long long>& segtree, vector<long long>& sumtree, vector<long long>& mintree, int node, int start, int end)
+long long find_answer(vector<long long>& arr, vector<long long>& sumtree, vector<int>& mintree, int node, int start, int end)
 {
-	if (start == end) return segtree[node] = segtree[node] * sumtree[node];
+	if (start == end) return arr[start] * arr[start];
+	int arrnum = find_min(arr, mintree, node, 0, n - 1, start, end);
+	long long a = find_sum(sumtree, node, 0, n - 1, start, end) * arr[arrnum];
+	if (arrnum > start) {
+		a = max(a, find_answer(arr, sumtree, mintree, node, start, arrnum - 1));
+	}
+	if (arrnum < end) {
+		a = max(a, find_answer(arr, sumtree, mintree, node, arrnum + 1, end));
+	}
+	return a;
 
-	int mid = (start + end) / 2;
-	long long a = init_seg(segtree, sumtree, mintree, node * 2, start, mid);
-	return segtree[node];
 }
 
 int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	int n;
 	cin >> n;
-	vector<long long> arr(n);
+	vector<long long> arr(n + 1);
 	vector<long long> sumtree(n * 4);
-	vector<long long> mintree(n * 4);
+	vector<int> mintree(n * 4);
 	for (int i = 0; i < n; ++i) {
 		cin >> arr[i];
 	}
+	arr[n] = inf;
 	init_sum(arr, sumtree, 1, 0, n - 1);
 	init_min(arr, mintree, 1, 0, n - 1);
 
-	cout << find_min(mintree, 1, 0, n - 1, 0, n - 1) * find_sum(sumtree, 1, 0, n - 1, 0, n - 1) << endl;
+	cout << find_answer(arr, sumtree, mintree, 1, 0, n - 1) << endl;
 }
