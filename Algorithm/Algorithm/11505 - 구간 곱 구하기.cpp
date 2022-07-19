@@ -34,6 +34,17 @@ long long find(vector<long long>& tree, int node, int start, int end, int left, 
 	return ((find(tree, node * 2, start, mid, left, right) % mod) * (find(tree, node * 2 + 1, mid + 1, end, left, right) % mod)) % mod;
 }
 
+void print_all(vector<long long>& tree, int node, int start, int end)
+{
+	if (start == end) {
+		cout << tree[node] << " ";
+		return;
+	}
+	int mid = (start + end) / 2;
+	print_all(tree, node * 2, start, mid);
+	print_all(tree, node * 2 + 1, mid + 1, end);
+}
+
 int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
@@ -53,6 +64,7 @@ int main()
 		if (query == 1) {
 			arr[a - 1] = (long long)b;
 			update(segtree, 1, 0, n - 1, a - 1, (long long)b);
+			cout << endl;
 		}
 		if (query == 2) {
 			cout << find(segtree, 1, 0, n - 1, a - 1, b - 1) << endl;
