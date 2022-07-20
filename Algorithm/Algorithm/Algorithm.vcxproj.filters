@@ -64,6 +64,9 @@
     <Filter Include="소스 파일\Djikstra">
       <UniqueIdentifier>{95245f0d-6a04-4a10-beba-f495aeffd200}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Segment Tree\Lazy Propagation">
+      <UniqueIdentifier>{ffdf83ff-4926-4d07-8e90-10fc76a4cc93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -291,12 +294,6 @@
     <ClCompile Include="1238 - 파티.cpp">
       <Filter>소스 파일\Djikstra</Filter>
     </ClCompile>
-    <ClCompile Include="10999 - 구간 합 구하기 2.cpp">
-      <Filter>소스 파일\Segment Tree</Filter>
-    </ClCompile>
-    <ClCompile Include="16975 - 수열과 쿼리 21.cpp">
-      <Filter>소스 파일\Segment Tree</Filter>
-    </ClCompile>
     <ClCompile Include="18436 - 수열과 쿼리 37.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
@@ -309,23 +306,32 @@
     <ClCompile Include="1989 - 부분배열 고르기 2.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
-    <ClCompile Include="17353 - 하늘에서 떨어지는 1, 2, ,,, R-L+1개의 별.cpp">
-      <Filter>소스 파일\Segment Tree</Filter>
-    </ClCompile>
-    <ClCompile Include="1395 - 스위치.cpp">
-      <Filter>소스 파일\Segment Tree</Filter>
-    </ClCompile>
     <ClCompile Include="11505 - 구간 곱 구하기.cpp">
-      <Filter>소스 파일\Segment Tree</Filter>
-    </ClCompile>
-    <ClCompile Include="12844 - XOR.cpp">
-      <Filter>소스 파일\Segment Tree</Filter>
-    </ClCompile>
-    <ClCompile Include="14245 - XOR.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
     <ClCompile Include="5676 - 음주 코딩.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="1395 - 스위치.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
+    <ClCompile Include="10999 - 구간 합 구하기 2.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
+    <ClCompile Include="12844 - XOR.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
+    <ClCompile Include="14245 - XOR.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
+    <ClCompile Include="16975 - 수열과 쿼리 21.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
+    <ClCompile Include="17353 - 하늘에서 떨어지는 1, 2, ,,, R-L+1개의 별.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
+    <ClCompile Include="17474 - 수열과 쿼리 26.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
