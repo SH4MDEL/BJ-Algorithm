@@ -324,6 +324,9 @@
     <ClCompile Include="14245 - XOR.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
+    <ClCompile Include="5676 - 음주 코딩.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
