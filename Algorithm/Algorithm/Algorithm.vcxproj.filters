@@ -67,6 +67,9 @@
     <Filter Include="소스 파일\Segment Tree\Lazy Propagation">
       <UniqueIdentifier>{ffdf83ff-4926-4d07-8e90-10fc76a4cc93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Segment Tree\Offline Query">
+      <UniqueIdentifier>{3ca245b3-feb5-4fe0-8088-956c37335358}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -338,6 +341,9 @@
     </ClCompile>
     <ClCompile Include="1517 - 버블 소트.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="16978 - 수열과 쿼리 22.cpp">
+      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
