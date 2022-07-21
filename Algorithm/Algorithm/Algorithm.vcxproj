@@ -204,7 +204,10 @@
     <ClCompile Include="12844 - XOR.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="14427 - 수열과 쿼리 15.cpp" />
+    <ClCompile Include="14427 - 수열과 쿼리 15.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1517 - 버블 소트.cpp" />
     <ClCompile Include="17474 - 수열과 쿼리 26.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
