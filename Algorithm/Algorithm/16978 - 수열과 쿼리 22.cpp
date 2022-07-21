@@ -1,10 +1,16 @@
 #include <iostream>
 #include <vector>
+#include <queue>
+#include <algorithm>
 #define endl "\n"
 #define inf 987654321
 using namespace std;
 
-int n, m, k;
+int n, m;
+
+struct Query {
+	int index, query1, i, j;
+};
 
 long long init(vector<long long>& arr, vector<long long>& tree, int node, int start, int end)
 {
@@ -38,7 +44,9 @@ void update(vector<long long>& tree, int node, int start, int end, int index, lo
 
 int main()
 {
-	cin >> n >> m >> k;
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+
+	cin >> n;
 
 	vector<long long> arr(n);
 	vector<long long> segtree(n * 4);
@@ -48,16 +56,40 @@ int main()
 	}
 	init(arr, segtree, 1, 0, n - 1);
 
-	long long query, a, b;
-	for (int i = 0; i < m + k; ++i) {
-		cin >> query >> a >> b;
+	int query, a, b, c;
+	vector<pair<int, int>> query1;
+	vector<Query> query2;
+	int query2index = 0;
+	cin >> m;
+	for (int i = 0; i < m; ++i) {
+		cin >> query;
 		if (query == 1) {
-			long long diff = (long long)b - arr[a - 1];
-			arr[a - 1] = b;
-			update(segtree, 1, 0, n - 1, a - 1, diff);
+			cin >> a >> b;
+			query1.push_back(make_pair(a, b));
 		}
 		if (query == 2) {
-			cout << find_sum(segtree, 1, 0, n - 1, a - 1, b - 1) << endl;
+			cin >> a >> b >> c;
+			query2.push_back(Query(query2index, a, b, c));
+			++query2index;
 		}
+	}
+	vector<long long> answer(query2index);
+	sort(query2.begin(), query2.end(), [](const Query& a, const Query& b) {
+		return a.query1 < b.query1;
+		});
+	int query1index = 0;
+	query2index = 0;
+	while (query2index < query2.size()) {
+		while (query2[query2index].query1 > query1index && query1index < query1.size()) {
+			long long diff = query1[query1index].second - arr[query1[query1index].first - 1];
+			arr[query1[query1index].first - 1] = query1[query1index].second;
+			update(segtree, 1, 0, n - 1, query1[query1index].first - 1, diff);
+			++query1index;
+		}
+		answer[query2[query2index].index] = find_sum(segtree, 1, 0, n - 1, query2[query2index].i - 1, query2[query2index].j - 1);
+		++query2index;
+	}
+	for (const auto& elm : answer) {
+		cout << elm << endl;
 	}
 }

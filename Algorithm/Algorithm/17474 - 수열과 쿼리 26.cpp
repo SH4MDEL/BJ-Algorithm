@@ -30,6 +30,8 @@ Node init(vector<long long>& arr, vector<Node>& tree, int node, int start, int e
 void update_lazy(vector<Node>& tree, int node, int start, int end)
 {
 	if (start == end) return;
+	// 부모 노드보다 자식 노드의 최댓값이 커지는 경우 부모 노드에서 업데이트가 일어났다고 할 수 있다.
+	// (자식 노드만이 커지는 업데이트는 결코 발생하지 않는다)
 	if (tree[node].maxval < tree[node * 2].maxval) {
 		tree[node * 2].sum -= (tree[node * 2].maxval - tree[node].maxval) * tree[node * 2].cnt;
 		tree[node * 2].maxval = tree[node].maxval;
