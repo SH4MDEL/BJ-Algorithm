@@ -348,6 +348,9 @@
     <ClCompile Include="15967 - 에바쿰.cpp">
       <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
     </ClCompile>
+    <ClCompile Include="13547 - 수열과 쿼리 5.cpp">
+      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

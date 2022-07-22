@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <map>
 #define inf 987654321 
 #define endl "\n"
 using namespace std;
@@ -10,10 +11,18 @@ int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	cin >> n;
-	while (n != 0) {
-		sum += pow(n % 10, 5);
-		n /= 10;
-	}
-	cout << sum << endl;
+	map<int, int> asdf;
+	cout << asdf.size() << endl;;
+	++asdf[1];
+	++asdf[1];
+	++asdf[1];
+	cout << asdf.size() << endl;;
+	++asdf[2];
+	++asdf[3];
+	++asdf[4];
+	cout << asdf[1] << endl;;
+	--asdf[1];
+	--asdf[1];
+	--asdf[1];
+	cout << asdf.size() << endl;;
 }
