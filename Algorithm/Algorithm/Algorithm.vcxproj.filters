@@ -351,6 +351,12 @@
     <ClCompile Include="13547 - 수열과 쿼리 5.cpp">
       <Filter>소스 파일\Segment Tree\Offline Query</Filter>
     </ClCompile>
+    <ClCompile Include="13548 - 수열과 쿼리 6.cpp">
+      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
+    </ClCompile>
+    <ClCompile Include="2517 - 달리기.cpp">
+      <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
