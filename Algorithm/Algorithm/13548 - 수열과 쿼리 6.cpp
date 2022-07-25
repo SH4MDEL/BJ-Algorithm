@@ -19,16 +19,16 @@ struct Query {
 
 vector<Query> query;
 vector<int> arr;
-int counter[1000010];	// 해당 수가 몇개 들어있는지
-int maxnum;		// 최대 수
-int countersize;			// 최대 수의 개수
+int counter1[100010];	// 해당 수가 몇개 들어있는지
+int counter2[100010];
+int maxcount;
 vector<int> answer;
 
 int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	maxnum = -1;
+	maxcount = 0;
 	int n, m;
 	cin >> n;
 	arr.resize(n);
@@ -47,54 +47,63 @@ int main()
 	sort(query.begin(), query.end());
 
 	for (int i = query[0].i; i <= query[0].j; ++i) {
-		++counter[arr[i - 1]];
-		if (counter[arr[i]] == maxnum) {
-			++countersize;
+		if (counter1[arr[i - 1]] != 0) {
+			--counter2[counter1[arr[i - 1]]];
 		}
-		if (counter[arr[i]] > maxnum) {
-			maxnum = counter[arr[i]];
-			countersize = 1;
+		++counter1[arr[i - 1]];
+		++counter2[counter1[arr[i - 1]]];
+		if (counter1[arr[i - 1]] > maxcount) {
+			maxcount = counter1[arr[i - 1]];
 		}
 	}
-	answer[query[0].index] = countersize;
+	answer[query[0].index] = maxcount;
 
 	for (int i = 1; i < query.size(); ++i) {
 		if (query[i].i > query[i - 1].i) {
 			for (int j = query[i - 1].i; j < query[i].i; ++j) {
-				if (counter[arr[j - 1]] == maxnum) {
-					if (countersize == 1) {
-
-					}
-					--countersize;
+				--counter2[counter1[arr[j - 1]]];
+				if (counter1[arr[j - 1]] == maxcount && !counter2[counter1[arr[j - 1]]]) {
+					--maxcount;
 				}
-				--counter[arr[j - 1]];
+				--counter1[arr[j - 1]];
+				++counter2[counter1[arr[j - 1]]];
 			}
 		}
 		if (query[i].i < query[i - 1].i) {
 			for (int j = query[i].i; j < query[i - 1].i; ++j) {
-				if (counter[arr[j - 1]] == 0) {
-					++countersize;
+				if (counter1[arr[j - 1]] != 0) {
+					--counter2[counter1[arr[j - 1]]];
 				}
-				++counter[arr[j - 1]];
+				++counter1[arr[j - 1]];
+				++counter2[counter1[arr[j - 1]]];
+				if (counter1[arr[j - 1]] > maxcount) {
+					maxcount = counter1[arr[j - 1]];
+				}
 			}
 		}
 		if (query[i].j > query[i - 1].j) {
 			for (int j = query[i - 1].j + 1; j <= query[i].j; ++j) {
-				if (counter[arr[j - 1]] == 0) {
-					++countersize;
+				if (counter1[arr[j - 1]] != 0) {
+					--counter2[counter1[arr[j - 1]]];
 				}
-				++counter[arr[j - 1]];
+				++counter1[arr[j - 1]];
+				++counter2[counter1[arr[j - 1]]];
+				if (counter1[arr[j - 1]] > maxcount) {
+					maxcount = counter1[arr[j - 1]];
+				}
 			}
 		}
 		if (query[i].j < query[i - 1].j) {
 			for (int j = query[i].j + 1; j <= query[i - 1].j; ++j) {
-				--counter[arr[j - 1]];
-				if (counter[arr[j - 1]] == 0) {
-					--countersize;
+				--counter2[counter1[arr[j - 1]]];
+				if (counter1[arr[j - 1]] == maxcount && !counter2[counter1[arr[j - 1]]]) {
+					--maxcount;
 				}
+				--counter1[arr[j - 1]];
+				++counter2[counter1[arr[j - 1]]];
 			}
 		}
-		answer[query[i].index] = countersize;
+		answer[query[i].index] = maxcount;
 	}
 	for (const auto& elm : answer) {
 		cout << elm << endl;
