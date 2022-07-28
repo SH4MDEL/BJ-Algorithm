@@ -1,28 +1,24 @@
 #include <iostream>
-#include <math.h>
-#include <map>
+#include <string>
 #define inf 987654321 
 #define endl "\n"
 using namespace std;
 
-int n, sum;
+string str;
 
 int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	map<int, int> asdf;
-	cout << asdf.size() << endl;;
-	++asdf[1];
-	++asdf[1];
-	++asdf[1];
-	cout << asdf.size() << endl;;
-	++asdf[2];
-	++asdf[3];
-	++asdf[4];
-	cout << asdf[1] << endl;;
-	--asdf[1];
-	--asdf[1];
-	--asdf[1];
-	cout << asdf.size() << endl;;
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; ++i) {
+		cin >> str;
+		if (str.length() >= 6 && str.length() <= 9) {
+			cout << "yes" << endl;
+		}
+		else {
+			cout << "no" << endl;
+		}
+	}
 }

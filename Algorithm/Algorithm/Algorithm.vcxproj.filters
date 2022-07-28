@@ -360,6 +360,9 @@
     <ClCompile Include="17408 - 수열과 쿼리 24.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
+    <ClCompile Include="13546 - 수열과 쿼리 4.cpp">
+      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
