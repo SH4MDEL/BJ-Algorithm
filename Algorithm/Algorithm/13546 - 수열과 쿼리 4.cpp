@@ -27,6 +27,7 @@ int sqrtcnt[260];
 int answer[101010];
 
 int n, k, m;
+
 int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
@@ -45,74 +46,123 @@ int main()
 	sort(query.begin(), query.end());
 
 	for (int j = query[0].s; j <= query[0].e; ++j) {
+		if (arr[origin[j]].size() >= 2) {
+			int idx = arr[origin[j]].back() - arr[origin[j]].front();
+			--cnt[idx];
+			--sqrtcnt[idx / 400];
+		}
 		arr[origin[j]].push_back(j);
-		int idx = arr[origin[j]].back() - arr[origin[j]].front();
-		++cnt[idx];
-		++sqrtcnt[idx / 400];
+		if (arr[origin[j]].size() >= 2) {
+			int idx = arr[origin[j]].back() - arr[origin[j]].front();
+			++cnt[idx];
+			++sqrtcnt[idx / 400];
+		}
 	}
 	for (int i = 251; i >= 0; --i) {
-		if (!sqrtcnt[i]) {
+		if (sqrtcnt[i] != 0) {
 			for (int j = 399; j >= 0; --j) {
-				if (!cnt[i * 400 + j]) {
+				if (cnt[i * 400 + j] != 0) {
 					answer[query[0].index] = i * 400 + j;
 					break;
 				}
 			}
+			break;
 		}
-		break;
 	}
 	int start = query[0].s, end = query[0].e;
 
 
 	for (int i = 1; i < query.size(); ++i) {
-		if (query[i].s > start) {
-			for (int j = start; j < query[i].s; ++j) {
-				arr[origin[j]].pop_front();
-				int idx = arr[origin[j]].back() - arr[origin[j]].front();
-				--cnt[idx];
-				--sqrtcnt[idx / 400];
+		if (query[i].e > end) {
+			for (int j = end + 1; j <= query[i].e; ++j) {
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					--cnt[idx];
+					--sqrtcnt[idx / 400];
+				}
+
+				arr[origin[j]].push_back(j);
+
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					++cnt[idx];
+					++sqrtcnt[idx / 400];
+				}
 			}
 		}
 		if (query[i].s < start) {
 			for (int j = start - 1; j >= query[i].s; --j) {
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					--cnt[idx];
+					--sqrtcnt[idx / 400];
+				}
+
 				arr[origin[j]].push_front(j);
-				int idx = arr[origin[j]].back() - arr[origin[j]].front();
-				++cnt[idx];
-				++sqrtcnt[idx / 400];
+
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					++cnt[idx];
+					++sqrtcnt[idx / 400];
+				}
 			}
 		}
 		if (query[i].e < end) {
 			for (int j = end; j > query[i].e; --j) {
-				arr[origin[j]].pop_back();
-				int idx = arr[origin[j]].back() - arr[origin[j]].front();
-				--cnt[idx];
-				--sqrtcnt[idx / 400];
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					--cnt[idx];
+					--sqrtcnt[idx / 400];
+				}
+
+				if (!arr[origin[j]].empty()) {
+					arr[origin[j]].pop_back();
+				}
+
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					++cnt[idx];
+					++sqrtcnt[idx / 400];
+					continue;
+				}
 			}
 		}
-		if (query[i].e > end) {
-			for (int j = end + 1; j <= query[i].e; ++j) {
-				arr[origin[j]].push_back(j);
-				int idx = arr[origin[j]].back() - arr[origin[j]].front();
-				++cnt[idx];
-				++sqrtcnt[idx / 400];
+		if (query[i].s > start) {
+			for (int j = start; j < query[i].s; ++j) {
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					--cnt[idx];
+					--sqrtcnt[idx / 400];
+				}
+
+				if (!arr[origin[j]].empty()) {
+					arr[origin[j]].pop_front();
+				}
+
+				if (arr[origin[j]].size() >= 2) {
+					int idx = arr[origin[j]].back() - arr[origin[j]].front();
+					++cnt[idx];
+					++sqrtcnt[idx / 400];
+					continue;
+				}
 			}
 		}
-		for (int j = 251; j >= 0; --i) {
-			if (!sqrtcnt[j]) {
+		for (int j = 251; j >= 0; --j) {
+			if (sqrtcnt[j] != 0) {
 				for (int k = 399; k >= 0; --k) {
-					if (!cnt[j * 400 + k]) {
+					if (cnt[j * 400 + k] != 0) {
 						answer[query[i].index] = j * 400 + k;
 						break;
 					}
 				}
+				break;
 			}
-			break;
 		}
 		start = query[i].s;
 		end = query[i].e;
 	}
 
-	for (const auto& elm : answer) {
-		cout << elm << endl;
+	for (int i = 0; i < m; ++i) {
+		cout << answer[i] << endl;
 	}
 }
