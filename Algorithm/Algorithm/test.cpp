@@ -1,24 +1,21 @@
 #include <iostream>
-#include <string>
 #define inf 987654321 
 #define endl "\n"
 using namespace std;
 
-string str;
+int all, sum, n;
 
 int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	int n;
-	cin >> n;
+	cin >> all >> n;
+	int a, b;
 	for (int i = 0; i < n; ++i) {
-		cin >> str;
-		if (str.length() >= 6 && str.length() <= 9) {
-			cout << "yes" << endl;
-		}
-		else {
-			cout << "no" << endl;
-		}
+		cin >> a >> b;
+		sum += a * b;
 	}
+	if (sum == all) cout << "Yes" << endl;
+	else cout << "No" << endl;
+	
 }
