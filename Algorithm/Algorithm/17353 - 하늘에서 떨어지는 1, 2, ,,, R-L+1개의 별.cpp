@@ -4,9 +4,14 @@
 #define inf 987654321
 using namespace std;
 
+long long sum;
 long long init(vector<long long>& arr, vector<long long>& tree, int node, int start, int end)
 {
-	if (start == end) return tree[node] = arr[start];
+	if (start == end) {
+		tree[node] = arr[start] - sum;
+		sum += tree[node];
+		return tree[node];
+	}
 
 	int mid = (start + end) / 2;
 	return tree[node] = init(arr, tree, node * 2, start, mid) + init(arr, tree, node * 2 + 1, mid + 1, end);
@@ -17,8 +22,6 @@ void update_lazy(vector<long long>& tree, vector<long long>& lazy, int node, int
 	if (lazy[node] != 0) {
 		tree[node] += lazy[node] * (end - start + 1);
 		if (start != end) {
-			int mid = (start + end) / 2;
-
 			lazy[node * 2] += lazy[node];
 			lazy[node * 2 + 1] += lazy[node];
 		}
@@ -91,12 +94,10 @@ int main()
 			cin >> a >> b;
 			update_range(segtree, lazytree, 1, 0, n - 1, a - 1, b - 1, 1);
 			update_range(segtree, lazytree, 1, 0, n - 1, b, b, -(b - a + 1));
-			print_all(segtree, 1, 0, n - 1);
-			cout << endl;
 		}
 		if (query == 2) {
 			cin >> a;
-			cout << find(segtree, lazytree, 1, 0, n - 1, a - 1, a - 1) << endl;
+			cout << find(segtree, lazytree, 1, 0, n - 1, 0, a - 1) << endl;
 		}
 	}
 }
