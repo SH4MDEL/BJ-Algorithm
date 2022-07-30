@@ -369,6 +369,9 @@
     <ClCompile Include="16993 - 연속합과 쿼리.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
+    <ClCompile Include="13925- 수열과 쿼리 13.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
