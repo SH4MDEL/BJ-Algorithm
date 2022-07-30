@@ -17,8 +17,8 @@ struct Node {
 	int find_right() {
 		return max(r, all);
 	}
-	int find_max() {
-		return max(find_left(), find_right());
+	int find_maxi() {
+		return maxi;
 	}
 };
 
@@ -33,12 +33,14 @@ Node init(vector<int>& arr, vector<Node>& tree, int node, int start, int end)
 	mainnode.all = leftnode.find_all() + rightnode.find_all();
 	mainnode.l = max(leftnode.find_all() + rightnode.find_left(), leftnode.find_left());
 	mainnode.r = max(leftnode.find_right() + rightnode.find_all(), rightnode.find_right());
+	int tmp = max(leftnode.maxi, rightnode.maxi);
+	mainnode.maxi = max(tmp, leftnode.find_right() + rightnode.find_left());
 	return tree[node] = mainnode;
 }
 
 Node find_sum(vector<Node>& tree, int node, int start, int end, int left, int right)
 {
-	if (left > end || right < start) return { -inf, -inf, -inf };
+	if (left > end || right < start) return { -inf, -inf, -inf, -inf };
 
 	if (left <= start && end <= right) return tree[node];
 
@@ -50,6 +52,8 @@ Node find_sum(vector<Node>& tree, int node, int start, int end, int left, int ri
 		mainnode.all = leftnode.find_all() + rightnode.find_all();
 		mainnode.l = max(leftnode.find_all() + rightnode.find_left(), leftnode.find_left());
 		mainnode.r = max(leftnode.find_right() + rightnode.find_all(), rightnode.find_right());
+		int tmp = max(leftnode.maxi, rightnode.maxi);
+		mainnode.maxi = max(tmp, leftnode.find_right() + rightnode.find_left());
 		return mainnode;
 	}
 	if (leftnode.all == -inf) return rightnode;
@@ -58,6 +62,8 @@ Node find_sum(vector<Node>& tree, int node, int start, int end, int left, int ri
 
 int main()
 {
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+
 	int n, m;
 	cin >> n;
 	vector<int> arr(n);
@@ -70,6 +76,6 @@ int main()
 	int a, b;
 	for (int i = 0; i < m; ++i) {
 		cin >> a >> b;
-		cout << find_sum(segtree, 1, 0, n - 1, a - 1, b - 1).find_max() << endl;
+		cout << find_sum(segtree, 1, 0, n - 1, a - 1, b - 1).find_maxi() << endl;
 	}
 }
