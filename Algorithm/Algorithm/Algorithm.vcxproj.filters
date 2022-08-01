@@ -70,6 +70,9 @@
     <Filter Include="소스 파일\Segment Tree\Offline Query">
       <UniqueIdentifier>{3ca245b3-feb5-4fe0-8088-956c37335358}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\hash_set">
+      <UniqueIdentifier>{0623a75b-b828-4fb8-8b3c-afdfe6d0b0fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -376,7 +379,10 @@
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
     <ClCompile Include="14425 - 문자열 집합.cpp">
-      <Filter>소스 파일\미분류</Filter>
+      <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
+    <ClCompile Include="1269 - 대칭 차집합.cpp">
+      <Filter>소스 파일\hash_set</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
