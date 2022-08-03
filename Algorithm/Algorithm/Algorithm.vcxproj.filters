@@ -73,6 +73,9 @@
     <Filter Include="소스 파일\hash_set">
       <UniqueIdentifier>{0623a75b-b828-4fb8-8b3c-afdfe6d0b0fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Geometry">
+      <UniqueIdentifier>{74d5d983-ef7b-448e-b918-72565b604d34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -383,6 +386,9 @@
     </ClCompile>
     <ClCompile Include="1269 - 대칭 차집합.cpp">
       <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
+    <ClCompile Include="1002 - 터렛.cpp">
+      <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
