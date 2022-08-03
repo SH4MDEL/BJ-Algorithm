@@ -1,4 +1,4 @@
-# Problem Solving with Baekjoon Online Judge
+# Problem Solving
 
 [![Solved.ac
 프로필](http://mazassumnida.wtf/api/generate_badge?boj=beeutiful)](https://solved.ac/profile/beeutiful)
