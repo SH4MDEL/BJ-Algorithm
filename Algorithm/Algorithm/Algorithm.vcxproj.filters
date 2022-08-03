@@ -390,6 +390,9 @@
     <ClCompile Include="1002 - 터렛.cpp">
       <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
+    <ClCompile Include="1912 - 연속합.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
