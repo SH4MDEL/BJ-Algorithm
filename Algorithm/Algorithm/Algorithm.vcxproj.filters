@@ -393,6 +393,9 @@
     <ClCompile Include="1912 - 연속합.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="2805 - 나무 자르기.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
