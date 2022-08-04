@@ -10,8 +10,8 @@ vector<pair<double, double>> coordinate;
 
 double ccw(pair<double, double> a, pair<double, double> b, pair<double, double> c)
 {
-	return 2 / ((a.first * b.second + b.first * c.second + c.first * a.second) -
-		(a.first * c.second + c.first * b.second + b.first * a.second));
+	return ((a.first * b.second + b.first * c.second + c.first * a.second) -
+		(a.first * c.second + c.first * b.second + b.first * a.second)) / 2;
 }
 
 int main()
@@ -23,7 +23,7 @@ int main()
 
 	cin >> n;
 	double a, b, sum = 0;
-	for (int i = 0; i < n - 2; ++i) {
+	for (int i = 0; i < n; ++i) {
 		cin >> a >> b;
 		coordinate.push_back(make_pair(a, b));
 	}

@@ -40,9 +40,6 @@ int main()
 {
 	while (1) {
 		scanf("%d", &N);
-		if (N == 0) {
-			break;
-		}
 		for (int i = 0; i < N; i++) {
 			scanf("%lld", &num[i]);
 		}
