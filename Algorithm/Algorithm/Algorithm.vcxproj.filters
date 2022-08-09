@@ -61,9 +61,6 @@
     <Filter Include="소스 파일\Sort">
       <UniqueIdentifier>{59131106-4634-4aeb-95ea-a25b43ab8423}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Djikstra">
-      <UniqueIdentifier>{95245f0d-6a04-4a10-beba-f495aeffd200}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Segment Tree\Lazy Propagation">
       <UniqueIdentifier>{ffdf83ff-4926-4d07-8e90-10fc76a4cc93}</UniqueIdentifier>
     </Filter>
@@ -75,6 +72,9 @@
     </Filter>
     <Filter Include="소스 파일\Geometry">
       <UniqueIdentifier>{74d5d983-ef7b-448e-b918-72565b604d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Dijkstra">
+      <UniqueIdentifier>{95245f0d-6a04-4a10-beba-f495aeffd200}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -292,16 +292,16 @@
       <Filter>소스 파일\Graph</Filter>
     </ClCompile>
     <ClCompile Include="1753 - 최단경로.cpp">
-      <Filter>소스 파일\Djikstra</Filter>
+      <Filter>소스 파일\Dijkstra</Filter>
     </ClCompile>
     <ClCompile Include="1916 - 최소비용 구하기.cpp">
-      <Filter>소스 파일\Djikstra</Filter>
+      <Filter>소스 파일\Dijkstra</Filter>
     </ClCompile>
     <ClCompile Include="1504 - 특정한 최단 경로.cpp">
-      <Filter>소스 파일\Djikstra</Filter>
+      <Filter>소스 파일\Dijkstra</Filter>
     </ClCompile>
     <ClCompile Include="1238 - 파티.cpp">
-      <Filter>소스 파일\Djikstra</Filter>
+      <Filter>소스 파일\Dijkstra</Filter>
     </ClCompile>
     <ClCompile Include="18436 - 수열과 쿼리 37.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
@@ -397,7 +397,10 @@
       <Filter>소스 파일\Binary Search</Filter>
     </ClCompile>
     <ClCompile Include="1261 - 알고스팟.cpp">
-      <Filter>소스 파일\Djikstra</Filter>
+      <Filter>소스 파일\Dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="4485 - 녹색 옷 입은 애가 젤다지.cpp">
+      <Filter>소스 파일\Dijkstra</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
