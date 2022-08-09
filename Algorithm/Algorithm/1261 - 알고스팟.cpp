@@ -12,13 +12,13 @@ int map[110][110];
 
 void dijkstra(int x, int y)
 {
-	queue<pair<int, int>> pq;
+	priority_queue<pair<int, int>> pq;
 	pq.push(make_pair(y, x));
 	dist[y][x] = 0;
 
 	while (!pq.empty()) {
-		int y = pq.front().first;
-		int x = pq.front().second;
+		int y = pq.top().first;
+		int x = pq.top().second;
 		pq.pop();
 
 		if (y < n && dist[y + 1][x] > dist[y][x] + map[y + 1][x]) {
