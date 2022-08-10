@@ -12,7 +12,7 @@ vector<pair<int, int>> vertex[1005];
 int dist[1005];
 int distsum[1005];
 
-void Djikstra(int start, bool isReturn)
+void Dijkstra(int start, bool isReturn)
 {
 	for (int i = 0; i < 1005; ++i) {
 		dist[i] = inf;
