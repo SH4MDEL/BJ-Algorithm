@@ -1,5 +1,4 @@
 #include <iostream>
-#include <map>
 #include <queue>
 #define endl "\n"
 #define inf 987654321
@@ -7,237 +6,76 @@ using namespace std;
 
 char cmap[52][52];
 int n, m;
+int counter;
 
-map<pair<int, int>, int> visited_map;
-queue<pair<int, int>> q;
+int visited[52][52][1 << 6];	// y, x, key
+int dx[4] = { -1, 1, 0, 0 };
+int dy[4] = { 0, 0, -1, 1 };
 
-int depthcount = inf;
-
-void Search(int x, int y, int key, int depth)
+void bfs(int y, int x)
 {
-	if (cmap[y][x] >= 'a' && cmap[y][x] <= 'f') {
-		key |= (1 << (int)(cmap[y][x] - 'a'));
+	queue<pair<int, pair<int, int>>> q;
+	q.push({ 0, {y, x} });
+	visited[y][x][0] = 1;
 
-	}
+	while (!q.empty()) {
 
-	if ((visited_map.find(make_pair(y * (n + 1) + x, key))) != visited_map.end()) {
-		if (visited_map[make_pair(y * (n + 1) + x, key)] < depth) {
-			return;
+		int key = q.front().first;
+		int nowy = q.front().second.first;
+		int nowx = q.front().second.second;
+		int oldkey = key;
+		q.pop();
+
+		if (cmap[nowy][nowx] == '1') {
+			if (visited[nowy][nowx][key] < counter) {
+				counter = visited[nowy][nowx][key];
+			}
+			continue;
 		}
-	}
-	visited_map[make_pair(y * (n + 1) + x, key)] = depth;
-
-	if (depth > depthcount) {
-		return;
-	}
-	if (cmap[y][x] >= 'A' && cmap[y][x] <= 'F') {
-		if (key & (1 << (int)(cmap[y][x] - 'A'))) {
+		if (visited[nowy][nowx][key] >= counter) continue;
+		if (cmap[nowy][nowx] == '#') continue;
+		if (cmap[nowy][nowx] >= 'a' && cmap[nowy][nowx] <= 'f') {
+			key |= (1 << (int)(cmap[nowy][nowx] - 'a'));
 		}
-		else {
-			return;
+		if (cmap[nowy][nowx] >= 'A' && cmap[nowy][nowx] <= 'F') {
+			if (!(key & (1 << (int)(cmap[nowy][nowx] - 'A')))) continue;
 		}
-	}
-	if (cmap[y][x] == '#') {
-		return;
-	}
 
-	if (cmap[y][x] == '1') {
-		if (depthcount > depth) {
-			depthcount = depth;
-		}
-		return;
-	}
+		for (int i = 0; i < 4; ++i) {
+			int ty = nowy + dy[i];
+			int tx = nowx + dx[i];
+			if (ty < 1 || ty > n || tx < 1 || tx > m) continue;
 
-
-	Search(x - 1, y, key, depth + 1);
-	Search(x + 1, y, key, depth + 1);
-	Search(x, y - 1, key, depth + 1);
-	Search(x, y + 1, key, depth + 1);
-}
-
-void bfs(int x, int y, int key) 
-{
-	q.push(make_pair(y * (n + 1) + x, key));
-	visited_map[make_pair(y * (n + 1) + x, key)] = 1;
-
-	[&]() {
-		while (!q.empty()) {
-			int qsize = q.size();
-
-			for (int i = 0; i < qsize; ++i) {
-				pair<int, int> current = q.front();
-				cout << (current.first) / (n + 1) << ", " << (current.first) % (n + 2) << endl;
-				cout << (current.first + (n + 1)) / (n + 1) << ", " << (current.first + (n + 1)) % (n + 1) << endl;
-				cout << (current.first - (n + 1)) / (n + 1) << ", " << (current.first - (n + 1)) % (n + 1) << endl;
-				cout << (current.first + 1) / (n + 1) << ", " << (current.first + 1) % (n + 1) << endl;
-				cout << (current.first - 1) / (n + 1) << ", " << (current.first - 1) % (n + 1) << endl << endl;
-				q.pop();
-
-				//if ((visited_map.find(make_pair(current.first + (n + 1), current.second))) != visited_map.end()) {
-				if (cmap[(current.first + (n + 1)) / (n + 1)][(current.first + (n + 1)) % (n + 1)] >= 'a' &&
-					cmap[(current.first + (n + 1)) / (n + 1)][(current.first + (n + 1)) % (n + 1)] <= 'z') {
-					int newkey = current.second | (1 << (int)(cmap[(current.first + (n + 1)) / (n + 1)][(current.first + (n + 1)) % (n + 1)] - 'a'));
-
-					if (visited_map.find(make_pair(current.first + (n + 1), newkey)) == visited_map.end()) {
-						q.push(make_pair(current.first + (n + 1), newkey));
-						visited_map[make_pair(current.first + (n + 1), newkey)] += 1;
-					}
-				}
-				if (cmap[(current.first + (n + 1)) / (n + 1)][(current.first + (n + 1)) % (n + 1)] >= 'A' &&
-					cmap[(current.first + (n + 1)) / (n + 1)][(current.first + (n + 1)) % (n + 1)] <= 'Z') {
-					if (current.second & (1 << (int)(cmap[(current.first + (n + 1)) / (n + 1)][(current.first + (n + 1)) % (n + 1)] - 'A'))) {
-
-						if (visited_map.find(make_pair(current.first + (n + 1), current.second)) == visited_map.end()) {
-							q.push(make_pair(current.first + (n + 1), current.second));
-							visited_map[make_pair(current.first + (n + 1), current.second)] = visited_map[make_pair(current.first, current.second)] + 1;
-						}
-					}
-				}
-				if (cmap[(current.first + (n + 1)) / (n + 1)][(current.first + (n + 1)) % (n + 1)] == '.') {
-
-					if (visited_map.find(make_pair(current.first + (n + 1), current.second)) == visited_map.end()) {
-						q.push(make_pair(current.first + (n + 1), current.second));
-						visited_map[make_pair(current.first + (n + 1), current.second)] += 1;
-					}
-				}
-				if ((current.first + (n + 1)) / (n + 1) == n && (current.first + (n + 1)) % (n + 1) == m) {
-					depthcount = visited_map[make_pair(current.first, current.second)] + 1;
-					return;
-				}
-
-
-				if (cmap[(current.first - (n + 1)) / (n + 1)][(current.first - (n + 1)) % (n + 1)] >= 'a' &&
-					cmap[(current.first - (n + 1)) / (n + 1)][(current.first - (n + 1)) % (n + 1)] <= 'z') {
-					int newkey = current.second | (1 << (int)(cmap[(current.first - (n + 1)) / (n + 1)][(current.first - (n + 1)) % (n + 1)] - 'a'));
-
-					if (visited_map.find(make_pair(current.first - (n + 1), newkey)) == visited_map.end()) {
-						q.push(make_pair(current.first - (n + 1), newkey));
-						visited_map[make_pair(current.first - (n + 1), newkey)] += 1;
-					}
-				}
-				if (cmap[(current.first - (n + 1)) / (n + 1)][(current.first - (n + 1)) % (n + 1)] >= 'A' &&
-					cmap[(current.first - (n + 1)) / (n + 1)][(current.first - (n + 1)) % (n + 1)] <= 'Z') {
-					if (current.second & (1 << (int)(cmap[(current.first - (n + 1)) / (n + 1)][(current.first - (n + 1)) % (n + 1)] - 'A'))) {
-
-						if (visited_map.find(make_pair(current.first - (n + 1), current.second)) == visited_map.end()) {
-							q.push(make_pair(current.first - (n + 1), current.second));
-							visited_map[make_pair(current.first - (n + 1), current.second)] = visited_map[make_pair(current.first, current.second)] + 1;
-						}
-					}
-				}
-				if (cmap[(current.first - (n + 1)) / (n + 1)][(current.first - (n + 1)) % (n + 1)] == '.') {
-
-					if (visited_map.find(make_pair(current.first - (n + 1), current.second)) == visited_map.end()) {
-						q.push(make_pair(current.first + (n + 1), current.second));
-						visited_map[make_pair(current.first + (n + 1), current.second)] += 1;
-					}
-				}
-				if ((current.first - (n + 1)) / (n + 1) == n && (current.first - (n + 1)) % (n + 1) == m) {
-					depthcount = visited_map[make_pair(current.first, current.second)] + 1;
-					return;
-				}
-
-
-				if (cmap[(current.first + 1) / (n + 1)][(current.first + 1) % (n + 1)] >= 'a' &&
-					cmap[(current.first + 1) / (n + 1)][(current.first + 1) % (n + 1)] <= 'z') {
-					int newkey = current.second | (1 << (int)(cmap[(current.first + 1) / (n + 1)][(current.first + 1) % (n + 1)] - 'a'));
-
-					if (visited_map.find(make_pair(current.first + 1, newkey)) == visited_map.end()) {
-						q.push(make_pair(current.first + 1, newkey));
-						visited_map[make_pair(current.first + 1, newkey)] += 1;
-					}
-				}
-				if (cmap[(current.first + 1) / (n + 1)][(current.first + 1) % (n + 1)] >= 'A' &&
-					cmap[(current.first + 1) / (n + 1)][(current.first + 1) % (n + 1)] <= 'Z') {
-					if (current.second & (1 << (int)(cmap[(current.first + 1) / (n + 1)][(current.first + 1) % (n + 1)] - 'A'))) {
-
-						if (visited_map.find(make_pair(current.first + 1, current.second)) == visited_map.end()) {
-							q.push(make_pair(current.first + 1, current.second));
-							visited_map[make_pair(current.first + 1, current.second)] = visited_map[make_pair(current.first, current.second)] + 1;
-						}
-					}
-				}
-				if (cmap[(current.first + 1) / (n + 1)][(current.first + 1) % (n + 1)] == '.') {
-
-					if (visited_map.find(make_pair(current.first + 1, current.second)) == visited_map.end()) {
-						q.push(make_pair(current.first + 1, current.second));
-						visited_map[make_pair(current.first + 1, current.second)] += 1;
-					}
-				}
-				if ((current.first + 1) / (n + 1) == n && (current.first + 1) % (n + 1) == m) {
-					depthcount = visited_map[make_pair(current.first, current.second)] + 1;
-					return;
-				}
-
-
-				if (cmap[(current.first - 1) / (n + 1)][(current.first - 1) % (n + 1)] >= 'a' &&
-					cmap[(current.first - 1) / (n + 1)][(current.first - 1) % (n + 1)] <= 'z') {
-					int newkey = current.second | (1 << (int)(cmap[(current.first - 1) / (n + 1)][(current.first - 1) % (n + 1)] - 'a'));
-
-					if (visited_map.find(make_pair(current.first - 1, newkey)) == visited_map.end()) {
-						q.push(make_pair(current.first - 1, newkey));
-						visited_map[make_pair(current.first - 1, newkey)] += 1;
-					}
-				}
-				if (cmap[(current.first - 1) / (n + 1)][(current.first - 1) % (n + 1)] >= 'A' &&
-					cmap[(current.first - 1) / (n + 1)][(current.first - 1) % (n + 1)] <= 'Z') {
-					if (current.second & (1 << (int)(cmap[(current.first - 1) / (n + 1)][(current.first - 1) % (n + 1)] - 'A'))) {
-
-						if (visited_map.find(make_pair(current.first - 1, current.second)) == visited_map.end()) {
-							q.push(make_pair(current.first - 1, current.second));
-							visited_map[make_pair(current.first - 1, current.second)] = visited_map[make_pair(current.first, current.second)] + 1;
-						}
-					}
-				}
-				if (cmap[(current.first - 1) / (n + 1)][(current.first - 1) % (n + 1)] == '.') {
-
-					if (visited_map.find(make_pair(current.first - 1, current.second)) == visited_map.end()) {
-						q.push(make_pair(current.first - 1, current.second));
-						visited_map[make_pair(current.first - 1, current.second)] += 1;
-					}
-				}
-				if ((current.first - 1) / (n + 1) == n && (current.first - 1) % (n + 1) == m) {
-					depthcount = visited_map[make_pair(current.first, current.second)] + 1;
-					return;
-				}
-
-				//}
+			if (visited[ty][tx][key] == 0) {
+				q.push({ key, {ty, tx} });
+				visited[ty][tx][key] = visited[nowy][nowx][oldkey] + 1;
 			}
 		}
-	}();
-}
-
-void bfsall(int startx, int starty)
-{
-
+	}
 }
 
 int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	int startx = 0, starty = 0;
-
-	for (int i = 0; i < 52; ++i) {
-		for (int j = 0; j < 52; ++j) {
+	cin >> n >> m;
+	
+	counter = inf;
+	int startx, starty;
+	for (int i = 0; i <= n + 1; ++i) {
+		for (int j = 0; j <= m + 1; ++j) {
 			cmap[i][j] = '#';
 		}
 	}
-	cin >> n >> m;
 	for (int i = 1; i <= n; ++i) {
 		for (int j = 1; j <= m; ++j) {
 			cin >> cmap[i][j];
 			if (cmap[i][j] == '0') {
-				starty = i, startx = j;
+				starty = i; startx = j;
 			}
 		}
 	}
-	cout << "start : " << starty << ", " << startx << endl;
-	bfs(startx, starty, 0);
-	if (depthcount == inf) {
-		cout << "-1" << endl;
-	}
-	else {
-		cout << depthcount << endl;
-	}
+	bfs(starty, startx);
+	if (counter == inf) cout << "-1" << endl;
+	else cout << counter - 1 << endl;
 }
