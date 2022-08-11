@@ -4,59 +4,48 @@
 #define inf 987654321
 using namespace std;
 
-int visited[200020];
-int n, k;
-int kcount = 0;
+int n, m;
+int num, counter;
+bool visited[101010] = {false};
 
-queue<int> q;
-
-void bfs(int x)
+void bfs()
 {
-	q.push(x);
-	visited[x] = 0;
+	queue<pair<int, int>> q;
+	//if (n * 2 <= 100000) q.push({ n * 2, counter + 1 });
+	//if (n + 1 <= 100000) q.push({ n + 1, counter + 1 });
+	//if (n - 1 >= 0) q.push({ n - 1, counter + 1 });
+	q.push({ n, 0 });
 
-	[&]() {
-		while (!q.empty()) {
-			auto qsize = q.size();
-			for (int i = 0; i < qsize; ++i) {
-				int current = q.front();
-				q.pop();
+	while (!q.empty()) {
+		int now = q.front().first;
+		int time = q.front().second;
+		q.pop();
 
-				if (current + 1 == k) {
-					++kcount;
-				}
-				if (current - 1 == k) {
-					++kcount;
-				}
-				if (current * 2 == k) {
-					++kcount;
-				}
-				if (visited[current + 1] == -1 && current + 1 <= 100000) {
-					q.push(current + 1);
-					visited[current + 1] = visited[current] + 1;
-				}
-				if (visited[current - 1] == -1 && current - 1 >= 0) {
-					q.push(current - 1);
-					visited[current - 1] = visited[current] + 1;
-				}
-				if (current * 2 <= 100000 && visited[current * 2] == -1) {
-					q.push(current * 2);
-					visited[current * 2] = visited[current] + 1;
-				}
+		visited[now] = true;
+		if (time > num) continue;
+
+		if (now == m) {
+			if (num > time) {
+				num = time;
+				counter = 1;
+				continue;
 			}
-			if (visited[k] != -1) {
-				return;
-			}
+			num = time;
+			++counter;
+			continue;
 		}
-	}();
+		if (now * 2 <= 100000 && !visited[now * 2]) q.push({ now * 2, time + 1 });
+		if (now + 1 <= 100000 && !visited[now + 1]) q.push({ now + 1, time + 1 });
+		if (now - 1 >= 0 && !visited[now - 1]) q.push({ now - 1, time + 1 });
+	}
 }
 
 int main()
 {
-	cin >> n >> k;
-	for (int i = 0; i < 200020; ++i) {
-		visited[i] = -1;
-	}
-	bfs(n);
-	cout << visited[k] << endl << kcount << endl;
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+
+	num = inf;
+	cin >> n >> m;
+	bfs();
+	cout << num << endl << counter << endl;
 }
