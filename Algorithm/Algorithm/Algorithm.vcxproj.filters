@@ -426,6 +426,9 @@
     <ClCompile Include="1717 - 집합의 표현.cpp">
       <Filter>소스 파일\Union Find</Filter>
     </ClCompile>
+    <ClCompile Include="1976 - 여행 가자.cpp">
+      <Filter>소스 파일\Union Find</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

@@ -28,18 +28,22 @@ int main()
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
 	cin >> n >> m;
-	for (int i = 0; i <= n; ++i) {
-		disjoint_set[i] = -1;
-	}
-	int query, a, b;
-	for (int i = 0; i < m; ++i) {
-		cin >> query >> a >> b;
-		if (query == 0) {
-			uf_union(a, b);
-		}
-		if (query == 1) {
-			if (uf_find(a) == uf_find(b)) cout << "YES" << endl;
-			else cout << "NO" << endl;
+	for (int i = 0; i <= n; ++i) disjoint_set[i] = -1;
+	int a;
+	for (int i = 0; i < n; ++i) {
+		for (int j = 0; j < n; ++j) {
+			cin >> a;
+			if (a == 1) uf_union(i, j);
 		}
 	}
+	int root;
+	bool checker = true;
+	cin >> a;
+	root = uf_find(a - 1);
+	for (int i = 1; i < m; ++i) {
+		cin >> a;
+		if (uf_find(a - 1) != root) checker = false;
+	}
+	if (checker) cout << "YES" << endl;
+	else cout << "NO" << endl;
 }
