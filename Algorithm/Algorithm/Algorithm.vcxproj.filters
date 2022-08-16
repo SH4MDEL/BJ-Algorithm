@@ -82,6 +82,9 @@
     <Filter Include="소스 파일\Minimum Spanning Tree">
       <UniqueIdentifier>{07cd6b91-4024-4224-8040-eff74cc14ea3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Union Find">
+      <UniqueIdentifier>{b35cd51d-7ba3-49a6-ad3f-95fa8adb6bef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -419,6 +422,9 @@
     </ClCompile>
     <ClCompile Include="1197 - 최소 스패닝 트리.cpp">
       <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="1717 - 집합의 표현.cpp">
+      <Filter>소스 파일\Union Find</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

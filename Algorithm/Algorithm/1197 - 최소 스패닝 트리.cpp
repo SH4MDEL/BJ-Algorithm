@@ -24,9 +24,10 @@ bool uf_union(int a, int b) {
 	return true;
 }
 
-
 int main()
 {
+	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+
 	cin >> v >> e;
 	for (int i = 0; i < v; ++i) disjoint_set[i] = -1;
 
