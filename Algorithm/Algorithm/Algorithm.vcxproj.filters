@@ -76,6 +76,9 @@
     <Filter Include="소스 파일\Dijkstra">
       <UniqueIdentifier>{95245f0d-6a04-4a10-beba-f495aeffd200}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Bellman-Ford">
+      <UniqueIdentifier>{667920bc-f9ff-4ce5-84aa-ada3ee6f7f30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -404,6 +407,12 @@
     </ClCompile>
     <ClCompile Include="1162 - 도로포장.cpp">
       <Filter>소스 파일\Dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="11657 - 타임머신.cpp">
+      <Filter>소스 파일\Bellman-Ford</Filter>
+    </ClCompile>
+    <ClCompile Include="1759 - 암호 만들기.cpp">
+      <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
