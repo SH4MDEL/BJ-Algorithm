@@ -432,6 +432,9 @@
     <ClCompile Include="16562 - 친구비.cpp">
       <Filter>소스 파일\Union Find</Filter>
     </ClCompile>
+    <ClCompile Include="20040 - 사이클 게임.cpp">
+      <Filter>소스 파일\Union Find</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

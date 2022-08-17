@@ -1,13 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define fastip std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+#define fastip std::cin.tie(nullptr)
+#define sws std::ios::sync_with_stdio(false)
 #define inf 987654321 
 #define endl "\n"
 using namespace std;
 
 int n, m;
-int disjoint_set[1000010];
+int disjoint_set[500500];
+
 
 int uf_find(int n)
 {
@@ -26,21 +28,21 @@ bool uf_union(int a, int b)
 
 int main()
 {
-	fastip;
+	fastip; sws;
 
 	cin >> n >> m;
+	int a, b;
 	for (int i = 0; i <= n; ++i) {
 		disjoint_set[i] = -1;
 	}
-	int query, a, b;
+	bool ans = false;
 	for (int i = 0; i < m; ++i) {
-		cin >> query >> a >> b;
-		if (query == 0) {
-			uf_union(a, b);
-		}
-		if (query == 1) {
-			if (uf_find(a) == uf_find(b)) cout << "YES" << endl;
-			else cout << "NO" << endl;
+		cin >> a >> b;
+		if (!uf_union(a, b)) {
+			ans = true;
+			cout << i + 1 << endl;
+			break;
 		}
 	}
+	if (!ans) cout << 0 << endl;
 }
