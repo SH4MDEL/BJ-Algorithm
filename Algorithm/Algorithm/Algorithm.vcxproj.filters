@@ -435,6 +435,9 @@
     <ClCompile Include="20040 - 사이클 게임.cpp">
       <Filter>소스 파일\Union Find</Filter>
     </ClCompile>
+    <ClCompile Include="1922 - 네트워크 연결.cpp">
+      <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
