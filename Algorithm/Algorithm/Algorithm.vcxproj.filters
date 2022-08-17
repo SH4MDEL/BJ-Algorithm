@@ -417,9 +417,6 @@
     <ClCompile Include="1759 - 암호 만들기.cpp">
       <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
-    <ClCompile Include="2098 - 외판원 순회.cpp">
-      <Filter>소스 파일\bitmask</Filter>
-    </ClCompile>
     <ClCompile Include="1197 - 최소 스패닝 트리.cpp">
       <Filter>소스 파일\Minimum Spanning Tree</Filter>
     </ClCompile>
@@ -427,6 +424,9 @@
       <Filter>소스 파일\Union Find</Filter>
     </ClCompile>
     <ClCompile Include="1976 - 여행 가자.cpp">
+      <Filter>소스 파일\Union Find</Filter>
+    </ClCompile>
+    <ClCompile Include="4195 - 친구 네트워크.cpp">
       <Filter>소스 파일\Union Find</Filter>
     </ClCompile>
   </ItemGroup>
