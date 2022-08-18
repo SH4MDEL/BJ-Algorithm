@@ -444,6 +444,9 @@
     <ClCompile Include="2166 - 다각형의 면적.cpp">
       <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
+    <ClCompile Include="1311 - 할 일 정하기 1.cpp">
+      <Filter>소스 파일\bitmask</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
