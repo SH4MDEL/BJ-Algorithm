@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <math.h>
 #include <algorithm>
 #define endl "\n"
 #define inf 987654321
@@ -18,8 +19,7 @@ int main()
 {
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
-	cout << fixed;
-	cout.precision(1);
+	cout << fixed; cout.precision(1);
 
 	cin >> n;
 	double a, b, sum = 0;
@@ -27,8 +27,8 @@ int main()
 		cin >> a >> b;
 		coordinate.push_back(make_pair(a, b));
 	}
-	for (int i = 0; i < n - 2; ++i) {
-		sum += ccw(coordinate[i], coordinate[i + 1], coordinate[i + 2]);
+	for (int i = 1; i < n - 1; ++i) {
+		sum += ccw(coordinate[0], coordinate[i], coordinate[i + 1]);
 	}
-	cout << sum << endl;
+	cout << abs(sum) << endl;
 }

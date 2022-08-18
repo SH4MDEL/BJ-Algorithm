@@ -11,9 +11,6 @@ bool visited[101010] = {false};
 void bfs()
 {
 	queue<pair<int, int>> q;
-	//if (n * 2 <= 100000) q.push({ n * 2, counter + 1 });
-	//if (n + 1 <= 100000) q.push({ n + 1, counter + 1 });
-	//if (n - 1 >= 0) q.push({ n - 1, counter + 1 });
 	q.push({ n, 0 });
 
 	while (!q.empty()) {

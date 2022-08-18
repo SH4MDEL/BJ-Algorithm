@@ -261,9 +261,6 @@
     <ClCompile Include="3006 - 터보소트.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
-    <ClCompile Include="2166 - 다각형의 면적.cpp">
-      <Filter>소스 파일\미분류</Filter>
-    </ClCompile>
     <ClCompile Include="3653 - 영화 수집.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
@@ -440,6 +437,12 @@
     </ClCompile>
     <ClCompile Include="6497 - 전력난.cpp">
       <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="1647 - 도시 분할 계획.cpp">
+      <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="2166 - 다각형의 면적.cpp">
+      <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
