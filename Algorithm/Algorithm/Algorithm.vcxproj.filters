@@ -450,6 +450,12 @@
     <ClCompile Include="2098 - 외판원 순회.cpp">
       <Filter>소스 파일\bitmask</Filter>
     </ClCompile>
+    <ClCompile Include="1562 - 계단 수.cpp">
+      <Filter>소스 파일\bitmask</Filter>
+    </ClCompile>
+    <ClCompile Include="2342 - Dance Dance Revolution.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
