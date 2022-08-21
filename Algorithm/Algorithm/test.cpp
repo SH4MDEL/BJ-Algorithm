@@ -9,8 +9,7 @@ int main()
 	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
 
 	int n;
-	cin >> n;
-	for (int i = 1; i <= n; ++i) {
-		cout << "Hello World, Judge " << i << "!" << endl;
-	}
+	string s;
+	cin >> s >> n;
+	
 }

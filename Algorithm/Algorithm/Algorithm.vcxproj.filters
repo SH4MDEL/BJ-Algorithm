@@ -19,9 +19,6 @@
     <Filter Include="소스 파일\Greedy">
       <UniqueIdentifier>{e9db3df6-899c-4eb2-bff0-1967057f427e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Basic Math">
-      <UniqueIdentifier>{06d17853-4398-483e-8912-5b61930a5e8d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Divide and Conquer">
       <UniqueIdentifier>{60ee979a-b075-435a-a621-e38450bb58be}</UniqueIdentifier>
     </Filter>
@@ -88,6 +85,9 @@
     <Filter Include="소스 파일\Topological Sort">
       <UniqueIdentifier>{7cfa7db4-e6fb-494e-aa4a-64cfb2aa50ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Math">
+      <UniqueIdentifier>{06d17853-4398-483e-8912-5b61930a5e8d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -109,13 +109,13 @@
       <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
     <ClCompile Include="1011 - Fly me to the Alpha Centauri.cpp">
-      <Filter>소스 파일\Basic Math</Filter>
+      <Filter>소스 파일\Math</Filter>
     </ClCompile>
     <ClCompile Include="3009 - 네 번째 점.cpp">
-      <Filter>소스 파일\Basic Math</Filter>
+      <Filter>소스 파일\Math</Filter>
     </ClCompile>
     <ClCompile Include="3053 - 택시 기하학.cpp">
-      <Filter>소스 파일\Basic Math</Filter>
+      <Filter>소스 파일\Math</Filter>
     </ClCompile>
     <ClCompile Include="1931 - 회의실 배정.cpp">
       <Filter>소스 파일\Greedy</Filter>
@@ -190,7 +190,7 @@
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
     <ClCompile Include="2407 - 조합.cpp">
-      <Filter>소스 파일\Basic Math</Filter>
+      <Filter>소스 파일\Math</Filter>
     </ClCompile>
     <ClCompile Include="5052 - 전화번호 목록.cpp">
       <Filter>소스 파일\trie</Filter>
@@ -479,6 +479,9 @@
     </ClCompile>
     <ClCompile Include="1766 - 문제집.cpp">
       <Filter>소스 파일\Topological Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="4386 - 별자리 만들기.cpp">
+      <Filter>소스 파일\Minimum Spanning Tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
