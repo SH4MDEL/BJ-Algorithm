@@ -85,6 +85,9 @@
     <Filter Include="소스 파일\Union Find">
       <UniqueIdentifier>{b35cd51d-7ba3-49a6-ad3f-95fa8adb6bef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Topological Sort">
+      <UniqueIdentifier>{7cfa7db4-e6fb-494e-aa4a-64cfb2aa50ba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -467,6 +470,9 @@
     </ClCompile>
     <ClCompile Include="1006 - 습격자 초라기.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="2252 - 줄 세우기.cpp">
+      <Filter>소스 파일\Topological Sort</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
