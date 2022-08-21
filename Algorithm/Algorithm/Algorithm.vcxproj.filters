@@ -471,7 +471,13 @@
     <ClCompile Include="1006 - 습격자 초라기.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="2623 - 음악프로그램.cpp">
+      <Filter>소스 파일\Topological Sort</Filter>
+    </ClCompile>
     <ClCompile Include="2252 - 줄 세우기.cpp">
+      <Filter>소스 파일\Topological Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="1766 - 문제집.cpp">
       <Filter>소스 파일\Topological Sort</Filter>
     </ClCompile>
   </ItemGroup>
