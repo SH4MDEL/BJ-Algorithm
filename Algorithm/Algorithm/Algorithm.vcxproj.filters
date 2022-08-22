@@ -483,6 +483,9 @@
     <ClCompile Include="4386 - 별자리 만들기.cpp">
       <Filter>소스 파일\Minimum Spanning Tree</Filter>
     </ClCompile>
+    <ClCompile Include="1806 - 부분합.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

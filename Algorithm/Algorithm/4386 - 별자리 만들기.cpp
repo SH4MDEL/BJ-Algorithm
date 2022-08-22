@@ -2,11 +2,13 @@
 #include <vector>
 #include <math.h>
 #include <algorithm>
+#define fastip std::cin.tie(nullptr)
+#define sws std::ios::sync_with_stdio(false)
 #define inf 987654321 
 #define endl "\n"
 using namespace std;
 
-int disjoint_set[10101];
+int disjoint_set[110];
 vector<pair<pair<int, int>, double>> vertex;
 pair<double, double> stars[110];
 int n;
@@ -26,7 +28,7 @@ bool uf_union(int a, int b) {
 
 int main()
 {
-	std::cin.tie(nullptr);  std::ios::sync_with_stdio(false);
+	fastip; sws;
 
 	cin >> n;
 	for (int i = 0; i < n; ++i) disjoint_set[i] = -1;
