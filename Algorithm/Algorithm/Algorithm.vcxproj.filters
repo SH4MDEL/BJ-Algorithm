@@ -486,6 +486,9 @@
     <ClCompile Include="1806 - 부분합.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
+    <ClCompile Include="10844 - 쉬운 계단 수.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
