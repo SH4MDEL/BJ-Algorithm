@@ -492,6 +492,9 @@
     <ClCompile Include="2579 - 계단 오르기.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="5430 - AC.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
