@@ -495,6 +495,9 @@
     <ClCompile Include="5430 - AC.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
+    <ClCompile Include="23971 - ZOAC 4.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
