@@ -519,6 +519,9 @@
     <ClCompile Include="Re 1149 - RGB거리.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="11053 - 가장 긴 증가하는 부분 수열.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
