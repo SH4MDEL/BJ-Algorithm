@@ -219,9 +219,6 @@
     <ClCompile Include="1520 - 내리막 길.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일\미분류</Filter>
-    </ClCompile>
     <ClCompile Include="2178 - 미로 탐색.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
@@ -500,6 +497,12 @@
     </ClCompile>
     <ClCompile Include="19532 - 수학은 비대면강의입니다.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="7785 - 회사에 있는 사람.cpp">
+      <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>소스 파일\미분류</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
