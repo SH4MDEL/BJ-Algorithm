@@ -61,5 +61,4 @@ int main()
     }
     merge_sort(0, n - 1);
     if (counting < k) cout << -1;
-    cout << counting;
 }
