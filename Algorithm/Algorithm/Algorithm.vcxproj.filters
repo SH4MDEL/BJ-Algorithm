@@ -88,6 +88,9 @@
     <Filter Include="소스 파일\Math">
       <UniqueIdentifier>{06d17853-4398-483e-8912-5b61930a5e8d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Recursion">
+      <UniqueIdentifier>{7097e0c4-6bfa-4568-9fff-de77ff0228e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -506,6 +509,9 @@
     </ClCompile>
     <ClCompile Include="11478 - 서로 다른 부분 문자열의 개수.cpp">
       <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
+    <ClCompile Include="24060 - 알고리즘 수업 - 병합 정렬 1.cpp">
+      <Filter>소스 파일\Recursion</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
