@@ -516,6 +516,9 @@
     <ClCompile Include="4779 - 칸토어 집합.cpp">
       <Filter>소스 파일\Recursion</Filter>
     </ClCompile>
+    <ClCompile Include="Re 1149 - RGB거리.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
