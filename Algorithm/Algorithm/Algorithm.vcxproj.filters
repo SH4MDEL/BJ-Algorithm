@@ -504,6 +504,9 @@
     <ClCompile Include="test.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
+    <ClCompile Include="11478 - 서로 다른 부분 문자열의 개수.cpp">
+      <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
