@@ -540,6 +540,9 @@
     <ClCompile Include="12919 - A와 B 2.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
     </ClCompile>
+    <ClCompile Include="2606 - 바이러스.cpp">
+      <Filter>소스 파일\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
