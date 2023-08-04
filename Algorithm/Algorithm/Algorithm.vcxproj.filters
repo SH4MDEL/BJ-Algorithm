@@ -91,6 +91,9 @@
     <Filter Include="소스 파일\Recursion">
       <UniqueIdentifier>{7097e0c4-6bfa-4568-9fff-de77ff0228e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Stack">
+      <UniqueIdentifier>{9546d20b-f17c-412b-97d3-b1a0d35c551e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -530,6 +533,9 @@
     </ClCompile>
     <ClCompile Include="1676 - 팩토리얼 0의 개수.cpp">
       <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="4949 - 균형잡힌 세상.cpp">
+      <Filter>소스 파일\Stack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
