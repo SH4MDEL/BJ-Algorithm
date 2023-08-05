@@ -558,6 +558,9 @@
     <ClCompile Include="9935 - 문자열 폭발.cpp">
       <Filter>소스 파일\Stack</Filter>
     </ClCompile>
+    <ClCompile Include="17298 - 오큰수.cpp">
+      <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
