@@ -564,6 +564,9 @@
     <ClCompile Include="17299 - 오등큰수.cpp">
       <Filter>소스 파일\Stack</Filter>
     </ClCompile>
+    <ClCompile Include="14940 - 쉬운 최단거리.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
