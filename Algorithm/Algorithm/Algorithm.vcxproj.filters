@@ -552,9 +552,6 @@
     <ClCompile Include="1991 - 트리 순회.cpp">
       <Filter>소스 파일\Recursion</Filter>
     </ClCompile>
-    <ClCompile Include="7576 - 토마토.cpp">
-      <Filter>소스 파일\BFS</Filter>
-    </ClCompile>
     <ClCompile Include="9935 - 문자열 폭발.cpp">
       <Filter>소스 파일\Stack</Filter>
     </ClCompile>
@@ -566,6 +563,9 @@
     </ClCompile>
     <ClCompile Include="14940 - 쉬운 최단거리.cpp">
       <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="14938 - 서강그라운드.cpp">
+      <Filter>소스 파일\Graph</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
