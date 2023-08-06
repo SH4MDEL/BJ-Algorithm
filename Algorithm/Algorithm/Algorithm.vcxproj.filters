@@ -73,9 +73,6 @@
     <Filter Include="소스 파일\Dijkstra">
       <UniqueIdentifier>{95245f0d-6a04-4a10-beba-f495aeffd200}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Bellman-Ford">
-      <UniqueIdentifier>{667920bc-f9ff-4ce5-84aa-ada3ee6f7f30}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Minimum Spanning Tree">
       <UniqueIdentifier>{07cd6b91-4024-4224-8040-eff74cc14ea3}</UniqueIdentifier>
     </Filter>
@@ -93,6 +90,9 @@
     </Filter>
     <Filter Include="소스 파일\Stack">
       <UniqueIdentifier>{9546d20b-f17c-412b-97d3-b1a0d35c551e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Floyd-Warshall">
+      <UniqueIdentifier>{6d07cb68-32f9-425f-8260-3faedaddd9cb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -299,9 +299,6 @@
     </ClCompile>
     <ClCompile Include="15663 - N과 M (9).cpp">
       <Filter>소스 파일\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="11404 - 플로이드.cpp">
-      <Filter>소스 파일\Graph</Filter>
     </ClCompile>
     <ClCompile Include="1753 - 최단경로.cpp">
       <Filter>소스 파일\Dijkstra</Filter>
@@ -564,8 +561,14 @@
     <ClCompile Include="14940 - 쉬운 최단거리.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="11404 - 플로이드.cpp">
+      <Filter>소스 파일\Floyd-Warshall</Filter>
+    </ClCompile>
     <ClCompile Include="14938 - 서강그라운드.cpp">
-      <Filter>소스 파일\Graph</Filter>
+      <Filter>소스 파일\Floyd-Warshall</Filter>
+    </ClCompile>
+    <ClCompile Include="1389 - 케빈 베이컨의 6단계 법칙.cpp">
+      <Filter>소스 파일\Floyd-Warshall</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
