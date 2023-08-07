@@ -94,6 +94,9 @@
     <Filter Include="소스 파일\Floyd-Warshall">
       <UniqueIdentifier>{6d07cb68-32f9-425f-8260-3faedaddd9cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\KMP">
+      <UniqueIdentifier>{4147ca3c-046e-40be-bf38-c9e91d721289}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -569,6 +572,9 @@
     </ClCompile>
     <ClCompile Include="1389 - 케빈 베이컨의 6단계 법칙.cpp">
       <Filter>소스 파일\Floyd-Warshall</Filter>
+    </ClCompile>
+    <ClCompile Include="1786 - 찾기.cpp">
+      <Filter>소스 파일\KMP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
