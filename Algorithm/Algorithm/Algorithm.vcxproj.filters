@@ -100,6 +100,9 @@
     <Filter Include="소스 파일\Aho-Corasick">
       <UniqueIdentifier>{53cca118-d063-4c20-9cd2-0382cc5fba60}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Simulation">
+      <UniqueIdentifier>{67f760e4-45ab-4fdb-a327-062cca0b9802}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -583,7 +586,10 @@
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
     <ClCompile Include="14500 - 테트로미노.cpp">
-      <Filter>소스 파일\미분류</Filter>
+      <Filter>소스 파일\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="10431 - 줄세우기.cpp">
+      <Filter>소스 파일\Simulation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
