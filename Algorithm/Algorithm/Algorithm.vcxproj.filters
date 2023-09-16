@@ -97,6 +97,9 @@
     <Filter Include="소스 파일\KMP">
       <UniqueIdentifier>{4147ca3c-046e-40be-bf38-c9e91d721289}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Aho-Corasick">
+      <UniqueIdentifier>{53cca118-d063-4c20-9cd2-0382cc5fba60}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -507,9 +510,6 @@
     <ClCompile Include="7785 - 회사에 있는 사람.cpp">
       <Filter>소스 파일\hash_set</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일\미분류</Filter>
-    </ClCompile>
     <ClCompile Include="11478 - 서로 다른 부분 문자열의 개수.cpp">
       <Filter>소스 파일\hash_set</Filter>
     </ClCompile>
@@ -575,6 +575,15 @@
     </ClCompile>
     <ClCompile Include="1786 - 찾기.cpp">
       <Filter>소스 파일\KMP</Filter>
+    </ClCompile>
+    <ClCompile Include="9250 - 문자열 집합 판별.cpp">
+      <Filter>소스 파일\Aho-Corasick</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
+    <ClCompile Include="14500 - 테트로미노.cpp">
+      <Filter>소스 파일\미분류</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
