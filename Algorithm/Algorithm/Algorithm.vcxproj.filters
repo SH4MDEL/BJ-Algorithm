@@ -591,6 +591,9 @@
     <ClCompile Include="10431 - 줄세우기.cpp">
       <Filter>소스 파일\Simulation</Filter>
     </ClCompile>
+    <ClCompile Include="8979 - 올림픽.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
