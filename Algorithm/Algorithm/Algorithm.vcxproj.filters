@@ -603,6 +603,9 @@
     <ClCompile Include="20125 - 쿠키의 신체 측정.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
+    <ClCompile Include="1205 - 등수 구하기.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
