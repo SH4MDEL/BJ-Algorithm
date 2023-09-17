@@ -594,6 +594,12 @@
     <ClCompile Include="8979 - 올림픽.cpp">
       <Filter>소스 파일\Sort</Filter>
     </ClCompile>
+    <ClCompile Include="4659 - 비밀번호 발음하기.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
+    <ClCompile Include="25757 - 임스와 함께하는 미니게임.cpp">
+      <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
