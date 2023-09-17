@@ -600,6 +600,9 @@
     <ClCompile Include="25757 - 임스와 함께하는 미니게임.cpp">
       <Filter>소스 파일\hash_set</Filter>
     </ClCompile>
+    <ClCompile Include="20125 - 쿠키의 신체 측정.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
