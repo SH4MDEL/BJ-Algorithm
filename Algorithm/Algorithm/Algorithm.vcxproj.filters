@@ -606,6 +606,9 @@
     <ClCompile Include="1205 - 등수 구하기.cpp">
       <Filter>소스 파일\Sort</Filter>
     </ClCompile>
+    <ClCompile Include="1921 - 그림.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
