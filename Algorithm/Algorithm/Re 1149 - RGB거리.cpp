@@ -15,7 +15,7 @@ int dp(int depth, int house)
 {
     if (depth == n) return 0;
 
-    if (cache[depth][house] != -1) return cache[depth][house];
+    if (cache[depth][house] != 0) return cache[depth][house];
     if (house == 0) {
         return cache[depth][house] = min(dp(depth + 1, 1) + cost[depth][house], dp(depth + 1, 2) + cost[depth][house]);
     }
@@ -32,7 +32,7 @@ int main()
     sws; fastip;
 
     cin >> n;
-    memset(cache, -1, 3030);
+    //memset(cache, -1, 3030);
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < 3; ++j) {
             cin >> cost[i][j];

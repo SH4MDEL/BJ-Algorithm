@@ -582,9 +582,6 @@
     <ClCompile Include="9250 - 문자열 집합 판별.cpp">
       <Filter>소스 파일\Aho-Corasick</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일\미분류</Filter>
-    </ClCompile>
     <ClCompile Include="14500 - 테트로미노.cpp">
       <Filter>소스 파일\Simulation</Filter>
     </ClCompile>
@@ -608,6 +605,12 @@
     </ClCompile>
     <ClCompile Include="1921 - 그림.cpp">
       <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
+    <ClCompile Include="3237 - 두 수의 합.cpp">
+      <Filter>소스 파일\Sort</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
