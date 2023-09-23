@@ -601,7 +601,7 @@
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
     <ClCompile Include="1205 - 등수 구하기.cpp">
-      <Filter>소스 파일\Sort</Filter>
+      <Filter>소스 파일\미분류</Filter>
     </ClCompile>
     <ClCompile Include="1921 - 그림.cpp">
       <Filter>소스 파일\BFS</Filter>
@@ -610,6 +610,9 @@
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
     <ClCompile Include="3237 - 두 수의 합.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="5397 - 키로거.cpp">
       <Filter>소스 파일\Sort</Filter>
     </ClCompile>
   </ItemGroup>
