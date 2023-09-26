@@ -103,6 +103,9 @@
     <Filter Include="소스 파일\Simulation">
       <UniqueIdentifier>{67f760e4-45ab-4fdb-a327-062cca0b9802}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Deque">
+      <UniqueIdentifier>{136347ec-5c37-46da-baef-feff5f186226}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -614,6 +617,12 @@
     </ClCompile>
     <ClCompile Include="5397 - 키로거.cpp">
       <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="1021 - 회전하는 큐.cpp">
+      <Filter>소스 파일\Deque</Filter>
+    </ClCompile>
+    <ClCompile Include="2493 - 탑.cpp">
+      <Filter>소스 파일\Stack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
