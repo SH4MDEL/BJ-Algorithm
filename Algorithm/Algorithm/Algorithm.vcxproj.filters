@@ -616,13 +616,19 @@
       <Filter>소스 파일\Sort</Filter>
     </ClCompile>
     <ClCompile Include="5397 - 키로거.cpp">
-      <Filter>소스 파일\Sort</Filter>
+      <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="2493 - 탑.cpp">
+      <Filter>소스 파일\Stack</Filter>
     </ClCompile>
     <ClCompile Include="1021 - 회전하는 큐.cpp">
       <Filter>소스 파일\Deque</Filter>
     </ClCompile>
     <ClCompile Include="2493 - 탑.cpp">
       <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="11003 - 최솟값 찾기.cpp">
+      <Filter>소스 파일\Priority Queue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
