@@ -40,9 +40,4 @@ int main()
             break;
         }
     }
-    //while (!pq.empty()) {
-    //    auto now = pq.top();
-    //    cout << now.index << " " << now.num << endl;
-    //    pq.pop();
-    //}
 }

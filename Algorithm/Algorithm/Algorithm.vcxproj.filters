@@ -630,6 +630,9 @@
     <ClCompile Include="11003 - 최솟값 찾기.cpp">
       <Filter>소스 파일\Priority Queue</Filter>
     </ClCompile>
+    <ClCompile Include="3986 - 좋은 단어.cpp">
+      <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
