@@ -642,6 +642,12 @@
     <ClCompile Include="11724 - 연결 요소의 개수.cpp">
       <Filter>소스 파일\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="Re 1931 - 회의실 배정.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="2217 - 로프.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
