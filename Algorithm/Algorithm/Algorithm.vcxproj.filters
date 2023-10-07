@@ -639,6 +639,9 @@
     <ClCompile Include="Re 1629 - 곱셈.cpp">
       <Filter>소스 파일\Recursion</Filter>
     </ClCompile>
+    <ClCompile Include="11724 - 연결 요소의 개수.cpp">
+      <Filter>소스 파일\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
