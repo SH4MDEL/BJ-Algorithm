@@ -648,6 +648,9 @@
     <ClCompile Include="2217 - 로프.cpp">
       <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
+    <ClCompile Include="15638 - 감시.cpp">
+      <Filter>소스 파일\Simulation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
