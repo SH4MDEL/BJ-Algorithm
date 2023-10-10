@@ -663,6 +663,9 @@
     <ClCompile Include="2660 - 회장뽑기.cpp">
       <Filter>소스 파일\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="1202 - 보석 도둑.cpp">
+      <Filter>소스 파일\Priority Queue</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
