@@ -13,7 +13,7 @@ struct jewel {
     int weight;
     int value;
 
-    bool operator<(const jewel& rhs) {
+    bool operator<(const jewel& rhs) const {
         return weight < rhs.weight;
     }
 };
