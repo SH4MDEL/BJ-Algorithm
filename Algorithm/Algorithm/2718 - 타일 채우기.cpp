@@ -28,7 +28,7 @@ int cache[101010][14];
 
 int dp(int k, int type)
 {
-    if (k == 0 || k == 0) {
+    if (k == 0) {
         if (type == 0) {
             return 1;
         }
