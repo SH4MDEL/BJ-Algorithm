@@ -11,13 +11,6 @@ using namespace std;
 long long cache[1010101];
 long long n;
 
-long long dp(long long n)
-{
-    if (cache[n] != -1) return cache[n] % mod;
-
-    return cache[n] = ((dp(n - 3) % mod) + (dp(n - 2) % mod) + (dp(n - 1) % mod)) % mod;
-}
-
 int main()
 {
     fastip; sws;
@@ -25,7 +18,7 @@ int main()
     cache[1] = 1; cache[2] = 2; cache[3] = 4; cache[4] = 7;
     cin >> n;
     for (int i = 5; i < 1000001; ++i) {
-        cache[i] = ((cache[i - 3] % mod) + (cache[i - 2] % mod) + (cache[i - 1] % mod)) % mod;
+        cache[i] = (cache[i - 3] + cache[i - 2] + cache[i - 1]) % mod;
     }
     for (int i = 0; i < n; ++i) {
         int k;
