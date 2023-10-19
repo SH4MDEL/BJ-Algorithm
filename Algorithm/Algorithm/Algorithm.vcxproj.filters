@@ -702,6 +702,9 @@
     <ClCompile Include="11779 - 최소비용 구하기 2.cpp">
       <Filter>소스 파일\Dijkstra</Filter>
     </ClCompile>
+    <ClCompile Include="16398 - 행성 연결.cpp">
+      <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
