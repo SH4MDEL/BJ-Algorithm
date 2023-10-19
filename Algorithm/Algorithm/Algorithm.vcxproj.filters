@@ -714,6 +714,9 @@
     <ClCompile Include="14442 - 벽 부수고 이동하기 2.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="2295 - 세 수의 합.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
