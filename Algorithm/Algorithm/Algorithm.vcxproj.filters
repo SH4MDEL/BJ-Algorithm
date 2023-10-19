@@ -708,6 +708,9 @@
     <ClCompile Include="1368 - 물대기.cpp">
       <Filter>소스 파일\Minimum Spanning Tree</Filter>
     </ClCompile>
+    <ClCompile Include="11055 - 가장 큰 증가하는 부분 수열.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
