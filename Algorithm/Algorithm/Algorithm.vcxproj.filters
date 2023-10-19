@@ -705,6 +705,9 @@
     <ClCompile Include="16398 - 행성 연결.cpp">
       <Filter>소스 파일\Minimum Spanning Tree</Filter>
     </ClCompile>
+    <ClCompile Include="1368 - 물대기.cpp">
+      <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
