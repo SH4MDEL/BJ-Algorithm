@@ -699,6 +699,9 @@
     <ClCompile Include="5972 - 택배 배송.cpp">
       <Filter>소스 파일\Dijkstra</Filter>
     </ClCompile>
+    <ClCompile Include="11779 - 최소비용 구하기 2.cpp">
+      <Filter>소스 파일\Dijkstra</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
