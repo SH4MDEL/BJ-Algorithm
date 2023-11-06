@@ -729,6 +729,12 @@
     <ClCompile Include="11048 - 이동하기.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="1937 - 욕심쟁이 판다.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1182 - 부분수열의 합.cpp">
+      <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
