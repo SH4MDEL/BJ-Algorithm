@@ -16,7 +16,6 @@ int search(int now, int c)
 	
 	int num = now + v[c];
 	if (num == s) {
-		cout << now << endl;
 		return search(now, c + 1) + search(num, c + 1) + 1;
 	}
 	return search(now, c + 1) + search(num, c + 1);

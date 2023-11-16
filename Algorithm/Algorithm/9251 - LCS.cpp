@@ -30,7 +30,7 @@ int main()
 	cin >> a >> b;
 	for (int i = 1; i <= b.length(); ++i) {
 		for (int j = 1; j <= a.length(); ++j) {
-			if (a[j - 1] == b[i - 1]) {
+			if (a[j - 1] == b[i - 1] && table[i - 1][j] == table[i][j - 1]) {
 				table[i][j] = table[i - 1][j - 1] + 1;
 			}
 			else {

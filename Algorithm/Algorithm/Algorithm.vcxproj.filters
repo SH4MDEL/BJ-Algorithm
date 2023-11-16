@@ -741,6 +741,12 @@
     <ClCompile Include="11758 - CCW.cpp">
       <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
+    <ClCompile Include="17387 - 선분 교차 2.cpp">
+      <Filter>소스 파일\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="17386 - 선분 교차 1.cpp">
+      <Filter>소스 파일\Geometry</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
