@@ -747,6 +747,12 @@
     <ClCompile Include="17386 - 선분 교차 1.cpp">
       <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
+    <ClCompile Include="2162 - 선분 그룹.cpp">
+      <Filter>소스 파일\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="14502 - 연구소.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
