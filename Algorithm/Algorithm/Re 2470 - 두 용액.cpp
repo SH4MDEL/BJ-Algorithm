@@ -3,7 +3,7 @@
 #include <algorithm>
 #define fastip std::cin.tie(nullptr)
 #define sws std::ios::sync_with_stdio(false)
-#define inf 987654321 
+#define inf 2100000000 
 #define endl "\n"
 #define ll long long
 using namespace std;
