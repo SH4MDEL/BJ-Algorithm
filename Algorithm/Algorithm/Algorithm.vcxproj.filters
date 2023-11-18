@@ -765,6 +765,9 @@
     <ClCompile Include="2343 - 기타 레슨.cpp">
       <Filter>소스 파일\Binary Search</Filter>
     </ClCompile>
+    <ClCompile Include="6226 - 용돈 관리.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
