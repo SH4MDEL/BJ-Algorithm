@@ -54,13 +54,13 @@ int main()
 		cin >> s >> e >> t;
 		vertex[s].push_back(make_pair(t, e));
 	}
-	Djikstra(x, false);
+	Dijkstra(x, false);
 	for (int i = 1; i <= n; ++i) {
 		distsum[i] += dist[i];
 	}
 	int maxdist = -1;
 	for (int i = 1; i <= n; ++i) {
-		Djikstra(i, true);
+		Dijkstra(i, true);
 		distsum[i] += dist[x];
 		if (maxdist < distsum[i]) {
 			maxdist = distsum[i];
