@@ -106,6 +106,12 @@
     <Filter Include="소스 파일\Deque">
       <UniqueIdentifier>{136347ec-5c37-46da-baef-feff5f186226}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\아레나">
+      <UniqueIdentifier>{28f33b7a-b1f6-4a5b-ba28-d0bf64ea633f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\아레나\231126">
+      <UniqueIdentifier>{34d3acad-657f-4d4b-ad16-69f5db5f278d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -779,6 +785,18 @@
     </ClCompile>
     <ClCompile Include="11049 - 행렬 곱셈 순서.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="A번 - 웰컴 키트.cpp">
+      <Filter>소스 파일\아레나\231126</Filter>
+    </ClCompile>
+    <ClCompile Include="B번 - 수도꼭지.cpp">
+      <Filter>소스 파일\아레나\231126</Filter>
+    </ClCompile>
+    <ClCompile Include="C번 - 과일 탕후루.cpp">
+      <Filter>소스 파일\아레나\231126</Filter>
+    </ClCompile>
+    <ClCompile Include="17509 - And the Winner Is Ourselves.cpp">
+      <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
