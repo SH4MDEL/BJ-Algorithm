@@ -807,6 +807,9 @@
     <ClCompile Include="13904 - 과제.cpp">
       <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
+    <ClCompile Include="15748 - Rest Stops.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
