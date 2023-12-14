@@ -822,6 +822,9 @@
     <ClCompile Include="11057 - 오르막 수.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="11051 - 이항 계수 2.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
