@@ -825,6 +825,18 @@
     <ClCompile Include="11051 - 이항 계수 2.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="Re 1182 - 부분수열의 합.cpp">
+      <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="1406 - 에디터.cpp">
+      <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="1966 - 프린터 큐.cpp">
+      <Filter>소스 파일\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="1874 - 스택 수열.cpp">
+      <Filter>소스 파일\Stack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
