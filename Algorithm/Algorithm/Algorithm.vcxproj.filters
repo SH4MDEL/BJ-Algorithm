@@ -846,6 +846,12 @@
     <ClCompile Include="1326 - 폴짝폴짝.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="Re 1197 - 최소 스패닝 트리.cpp">
+      <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 16953 - A → B.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

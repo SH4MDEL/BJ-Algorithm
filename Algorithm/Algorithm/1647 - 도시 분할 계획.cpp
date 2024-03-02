@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include <queue>
 #include <algorithm>
 #define fastip std::cin.tie(nullptr)
 #define sws std::ios::sync_with_stdio(false)
@@ -7,50 +7,54 @@
 #define endl "\n"
 using namespace std;
 
-int n, m;
-int disjoint_set[101010];
-struct Node {
-	int v, e, w;
-};
-vector<Node> vertex;
+struct vertex
+{
+	int a, b, v;
 
-int uf_find(int n) {
-	if (disjoint_set[n] == -1) return n;
-	return disjoint_set[n] = uf_find(disjoint_set[n]);
+	bool operator<(const vertex& rhs) const {
+		return v > rhs.v;
+	}
+};
+priority_queue<vertex> pq;
+
+int parent[100100];
+int n, m;
+
+int uf_find(int n)
+{
+	if (parent[n] == -1) return n;
+	return parent[n] = uf_find(parent[n]);
 }
 
-bool uf_union(int a, int b) {
+bool uf_union(int a, int b)
+{
 	a = uf_find(a);
 	b = uf_find(b);
+
 	if (a == b) return false;
-	disjoint_set[b] = a;
+	parent[a] = b;
 	return true;
 }
-
 
 int main()
 {
 	fastip; sws;
 
+	fill(parent, parent + 100100, -1);
+
 	cin >> n >> m;
-	for (int i = 1; i <= n; ++i) {
-		disjoint_set[i] = -1;
-	}
-	int a, b, c;
 	for (int i = 0; i < m; ++i) {
+		int a, b, c;
 		cin >> a >> b >> c;
-		vertex.push_back({ a, b, c });
+		pq.push({ a, b, c });
 	}
-	sort(vertex.begin(), vertex.end(), [](const Node& a, const Node& b) {
-		return a.w < b.w;
-		});
-	int ans = 0, cnt = 0;
-	for (const auto& elm : vertex) {
-		if (uf_union(elm.v, elm.e)) {
-			ans += elm.w;
-			++cnt;
+	int count = 0, ans = 0;
+	while (count != n - 2) {
+		auto now = pq.top(); pq.pop();
+		if (uf_union(now.a, now.b)) {
+			ans += now.v;
+			++count;
 		}
-		if (cnt == n - 2) break;
 	}
-	cout << ans << endl;
+	cout << ans;
 }
