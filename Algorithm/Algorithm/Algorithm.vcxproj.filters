@@ -852,6 +852,9 @@
     <ClCompile Include="Re 16953 - A → B.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="13460 - 구슬 탈출 2.cpp">
+      <Filter>소스 파일\Simulation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
@@ -860,5 +863,10 @@
     <Text Include="tip.txt">
       <Filter>소스 파일</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdc++.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
