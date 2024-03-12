@@ -10,15 +10,15 @@ using namespace std;
 int num[8];
 int n, m;
 
-void solve(string str, int depth, int index)
+void solve(string str, int depth)
 {
 	if (depth == m) {
 		cout << str << endl;
 		return;
 	}
 
-	for (int i = index; i < n; ++i) {
-		solve(str + to_string(num[i]) + " ", depth + 1, i + 1);
+	for (int i = 0; i < n; ++i) {
+		solve(str + to_string(num[i]) + " ", depth + 1);
 	}
 }
 
@@ -31,5 +31,5 @@ int main()
 		cin >> num[i];
 	}
 	sort(num, num + n);
-	solve("", 0, 0);
+	solve("", 0);
 }
