@@ -897,6 +897,12 @@
     <ClCompile Include="13549 - 숨바꼭질 3.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="14942 - 개미.cpp">
+      <Filter>소스 파일\sparse_table</Filter>
+    </ClCompile>
+    <ClCompile Include="3117 - YouTube.cpp">
+      <Filter>소스 파일\sparse_table</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
