@@ -115,6 +115,9 @@
     <Filter Include="소스 파일\primality">
       <UniqueIdentifier>{04191864-c694-4c8a-bf40-4377c8ad52d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\sparse_table">
+      <UniqueIdentifier>{53783a01-99b8-458d-9aa6-c3b13ca5f71a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -888,8 +891,11 @@
     <ClCompile Include="2630 - 색종이 만들기.cpp">
       <Filter>소스 파일\Recursion</Filter>
     </ClCompile>
+    <ClCompile Include="17435 - 합성함수와 쿼리.cpp">
+      <Filter>소스 파일\sparse_table</Filter>
+    </ClCompile>
     <ClCompile Include="13549 - 숨바꼭질 3.cpp">
-      <Filter>소스 파일\Dijkstra</Filter>
+      <Filter>소스 파일\BFS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
