@@ -112,6 +112,9 @@
     <Filter Include="소스 파일\아레나\231126">
       <UniqueIdentifier>{34d3acad-657f-4d4b-ad16-69f5db5f278d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\primality">
+      <UniqueIdentifier>{04191864-c694-4c8a-bf40-4377c8ad52d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -863,6 +866,21 @@
     </ClCompile>
     <ClCompile Include="18111 - 마인크래프트.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 4485 - 녹색 옷 입은 애가 젤다지.cpp">
+      <Filter>소스 파일\Dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="1176 - 섞기.cpp">
+      <Filter>소스 파일\bitmask</Filter>
+    </ClCompile>
+    <ClCompile Include="2618 - 경찰차.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="17081 - RPG Extreme.cpp">
+      <Filter>소스 파일\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="27172 - 수 나누기 게임.cpp">
+      <Filter>소스 파일\primality</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
