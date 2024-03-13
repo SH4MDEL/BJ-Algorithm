@@ -885,6 +885,9 @@
     <ClCompile Include="15666 - N과 M (12).cpp">
       <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
+    <ClCompile Include="2630 - 색종이 만들기.cpp">
+      <Filter>소스 파일\Recursion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
