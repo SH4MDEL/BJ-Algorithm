@@ -888,6 +888,9 @@
     <ClCompile Include="2630 - 색종이 만들기.cpp">
       <Filter>소스 파일\Recursion</Filter>
     </ClCompile>
+    <ClCompile Include="13549 - 숨바꼭질 3.cpp">
+      <Filter>소스 파일\Dijkstra</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
