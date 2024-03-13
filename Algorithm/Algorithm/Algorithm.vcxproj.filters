@@ -882,6 +882,9 @@
     <ClCompile Include="27172 - 수 나누기 게임.cpp">
       <Filter>소스 파일\primality</Filter>
     </ClCompile>
+    <ClCompile Include="15666 - N과 M (12).cpp">
+      <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
