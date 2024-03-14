@@ -916,6 +916,9 @@
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
     <ClCompile Include="1862 - 미터계.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="12845 - 모두의 마블.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
   </ItemGroup>
