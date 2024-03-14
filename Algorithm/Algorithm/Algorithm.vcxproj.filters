@@ -121,6 +121,9 @@
     <Filter Include="소스 파일\LCA">
       <UniqueIdentifier>{e000f995-11f6-44ac-8b17-20169d4aa3a0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\string">
+      <UniqueIdentifier>{a1c0ae14-af23-4f7b-a0c4-4805474f0241}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -905,6 +908,12 @@
     </ClCompile>
     <ClCompile Include="20529 - 가장 가까운 세 사람의 심리적 거리.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="2887 - 행성 터널.cpp">
+      <Filter>소스 파일\Minimum Spanning Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="5525 - IOIOI.cpp">
+      <Filter>소스 파일\string</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
