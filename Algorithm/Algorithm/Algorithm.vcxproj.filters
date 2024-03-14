@@ -753,9 +753,6 @@
     <ClCompile Include="1182 - 부분수열의 합.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
     </ClCompile>
-    <ClCompile Include="17070 - 파이프 옮기기 1.cpp">
-      <Filter>소스 파일\Dynamic Programming</Filter>
-    </ClCompile>
     <ClCompile Include="11758 - CCW.cpp">
       <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
