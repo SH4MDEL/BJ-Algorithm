@@ -915,6 +915,9 @@
     <ClCompile Include="5525 - IOIOI.cpp">
       <Filter>소스 파일\string</Filter>
     </ClCompile>
+    <ClCompile Include="Re 17404 - RGB거리 2.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
