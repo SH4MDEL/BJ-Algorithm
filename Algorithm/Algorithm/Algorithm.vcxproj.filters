@@ -919,7 +919,10 @@
       <Filter>소스 파일\Math</Filter>
     </ClCompile>
     <ClCompile Include="12845 - 모두의 마블.cpp">
-      <Filter>소스 파일\미분류</Filter>
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="25125 - 타이핑.cpp">
+      <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
