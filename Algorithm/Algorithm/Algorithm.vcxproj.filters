@@ -942,6 +942,9 @@
     <ClCompile Include="3584 - 가장 가까운 공통 조상.cpp">
       <Filter>소스 파일\LCA</Filter>
     </ClCompile>
+    <ClCompile Include="11438 - LCA 2.cpp">
+      <Filter>소스 파일\LCA</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
