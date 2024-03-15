@@ -928,6 +928,9 @@
       <Filter>소스 파일\Math</Filter>
     </ClCompile>
     <ClCompile Include="24464 - 득수 밥 먹이기.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="14651 - 걷다보니 신천역 삼 (Large).cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
   </ItemGroup>
