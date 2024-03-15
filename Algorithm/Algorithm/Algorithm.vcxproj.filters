@@ -931,6 +931,12 @@
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
     <ClCompile Include="14651 - 걷다보니 신천역 삼 (Large).cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="15916 - 가희는 그래플러야!!.cpp">
+      <Filter>소스 파일\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="30991 - ESC.cpp">
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
   </ItemGroup>

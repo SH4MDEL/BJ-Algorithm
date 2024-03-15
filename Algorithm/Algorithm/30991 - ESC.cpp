@@ -4,22 +4,23 @@
 #define inf 987654321 
 #define endl "\n"
 #define ll long long
-#define mod 1'000'000'009
 using namespace std;
 
-int n;
+ll n, a, b, c;
 
 int main()
 {
 	fastip; sws;
 
+	b = c = 1;
+	a = -1;
 	cin >> n;
-	if (n == 1) cout << 0;
-	else {
-		ll ans = 2;
-		for (int i = 2; i < n; ++i) {
-			ans = ((ans % mod) * (3 % mod)) % mod;
-		}
-		cout << ans;
+	ll ta, tb, tc;
+	for (int i = 1; i < n; ++i) {
+		ta = a, tb = b, tc = c;
+		a = (ta - tc);
+		b = (tb + tc);
+		c = (2 * ta - 2 * tb + tc);
 	}
+	cout << a + b + c;
 }
