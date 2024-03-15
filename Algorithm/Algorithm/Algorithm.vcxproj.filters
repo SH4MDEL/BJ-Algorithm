@@ -937,7 +937,10 @@
       <Filter>소스 파일\Geometry</Filter>
     </ClCompile>
     <ClCompile Include="30991 - ESC.cpp">
-      <Filter>소스 파일\미분류</Filter>
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="3584 - 가장 가까운 공통 조상.cpp">
+      <Filter>소스 파일\LCA</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
