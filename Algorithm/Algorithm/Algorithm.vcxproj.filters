@@ -948,6 +948,21 @@
     <ClCompile Include="14725 - 개미굴.cpp">
       <Filter>소스 파일\trie</Filter>
     </ClCompile>
+    <ClCompile Include="5670 - 휴대폰 자판.cpp">
+      <Filter>소스 파일\trie</Filter>
+    </ClCompile>
+    <ClCompile Include="14225 - 부분수열의 합.cpp">
+      <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="29755 - 블랙홀과 소행성.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="11729 - 하노이 탑 이동 순서.cpp">
+      <Filter>소스 파일\Recursion</Filter>
+    </ClCompile>
+    <ClCompile Include="3176 - 도로 네트워크.cpp">
+      <Filter>소스 파일\LCA</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
