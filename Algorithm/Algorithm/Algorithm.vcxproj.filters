@@ -978,6 +978,9 @@
     <ClCompile Include="9019 - DSLR.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="9375 - 패션왕 신해빈.cpp">
+      <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
