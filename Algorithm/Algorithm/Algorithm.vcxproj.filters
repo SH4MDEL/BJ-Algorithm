@@ -975,6 +975,9 @@
     <ClCompile Include="7569 - 토마토.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="9019 - DSLR.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
