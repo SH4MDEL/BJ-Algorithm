@@ -9,5 +9,5 @@ using namespace std;
 
 int main() 
 {
-
+	fastip; sws;
 }
