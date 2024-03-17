@@ -966,6 +966,9 @@
     <ClCompile Include="13334 - 철로.cpp">
       <Filter>소스 파일\Priority Queue</Filter>
     </ClCompile>
+    <ClCompile Include="19585 - 전설.cpp">
+      <Filter>소스 파일\trie</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
@@ -974,10 +977,5 @@
     <Text Include="tip.txt">
       <Filter>소스 파일</Filter>
     </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdc++.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
