@@ -969,6 +969,9 @@
     <ClCompile Include="19585 - 전설.cpp">
       <Filter>소스 파일\trie</Filter>
     </ClCompile>
+    <ClCompile Include="6064 - 카잉 달력.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
