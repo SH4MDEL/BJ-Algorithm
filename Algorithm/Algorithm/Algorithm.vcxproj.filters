@@ -984,6 +984,9 @@
     <ClCompile Include="16928 - 뱀과 사다리 게임.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="17219 - 비밀번호 찾기.cpp">
+      <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
