@@ -1002,6 +1002,12 @@
     <ClCompile Include="14426 - 접두사 찾기.cpp">
       <Filter>소스 파일\hash_set</Filter>
     </ClCompile>
+    <ClCompile Include="2096 - 내려가기.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="1256 - 사전.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
