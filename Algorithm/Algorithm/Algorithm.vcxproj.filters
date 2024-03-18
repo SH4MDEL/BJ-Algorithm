@@ -993,6 +993,15 @@
     <ClCompile Include="21736 - 헌내기는 친구가 필요해.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="5719 - 거의 최단 경로.cpp">
+      <Filter>소스 파일\Dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="15966 - 군계일학.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="14426 - 접두사 찾기.cpp">
+      <Filter>소스 파일\hash_set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
