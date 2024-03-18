@@ -1008,6 +1008,9 @@
     <ClCompile Include="1256 - 사전.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="1010 - 다리 놓기.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
