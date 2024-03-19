@@ -1015,7 +1015,13 @@
       <Filter>소스 파일\Stack</Filter>
     </ClCompile>
     <ClCompile Include="16198 - 에너지 모으기.cpp">
-      <Filter>소스 파일\미분류</Filter>
+      <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="16456 - 하와와 대학생쨩 하와이로 가는 거시와요~.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="9527 - 1의 개수 세기.cpp">
+      <Filter>소스 파일\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
