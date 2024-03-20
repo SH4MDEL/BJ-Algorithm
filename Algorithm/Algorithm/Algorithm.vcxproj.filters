@@ -1029,6 +1029,9 @@
     <ClCompile Include="17069 - 파이프 옮기기 2.cpp">
       <Filter>소스 파일\Dynamic Programming</Filter>
     </ClCompile>
+    <ClCompile Include="14613 - 너의 티어는.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
