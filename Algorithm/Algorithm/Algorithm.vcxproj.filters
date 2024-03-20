@@ -1041,6 +1041,9 @@
     <ClCompile Include="22939 - 쿠키크루.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
     </ClCompile>
+    <ClCompile Include="2836 - 수상 택시.cpp">
+      <Filter>소스 파일\Sweeping</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
