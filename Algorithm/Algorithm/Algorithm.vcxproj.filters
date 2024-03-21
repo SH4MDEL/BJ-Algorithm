@@ -1044,6 +1044,15 @@
     <ClCompile Include="2836 - 수상 택시.cpp">
       <Filter>소스 파일\Sweeping</Filter>
     </ClCompile>
+    <ClCompile Include="10000 - 원 영역.cpp">
+      <Filter>소스 파일\Sweeping</Filter>
+    </ClCompile>
+    <ClCompile Include="12850 - 본대 산책2.cpp">
+      <Filter>소스 파일\Divide and Conquer</Filter>
+    </ClCompile>
+    <ClCompile Include="9328 - 열쇠.cpp">
+      <Filter>소스 파일\BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
