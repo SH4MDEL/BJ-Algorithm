@@ -1053,6 +1053,9 @@
     <ClCompile Include="9328 - 열쇠.cpp">
       <Filter>소스 파일\BFS</Filter>
     </ClCompile>
+    <ClCompile Include="9506 - 약수들의 합.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
