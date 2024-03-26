@@ -1,8 +1,6 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <optional>
 #include <algorithm>
+#include <memory.h>
 #define fastip std::cin.tie(nullptr)
 #define sws std::ios::sync_with_stdio(false)
 #define inf 987654321 
@@ -11,40 +9,35 @@ using namespace std;
 
 int n;
 int num[100100][3];
-vector cache(2, vector(100100, vector(3, optional<int>())));
-
-int dp(int pos, int depth, int isMin)
-{
-	if (depth == n) return cache[isMin][depth][pos].emplace(num[depth][pos]);
-	if (cache[isMin][depth][pos].has_value()) return cache[isMin][depth][pos].value();
-
-	auto func = [&](initializer_list<int> l) {
-		if (isMin) return min(l);
-		return max(l); };
-
-	if (pos == 0) {
-		return cache[isMin][depth][pos].emplace(
-			func({ dp(0, depth + 1, isMin),
-				dp(1, depth + 1, isMin) }) + num[depth][pos]);
-	}
-	else if (pos == 1) {
-		return cache[isMin][depth][pos].emplace(
-			func({ dp(0, depth + 1, isMin),
-				dp(1, depth + 1, isMin), 
-				dp(2, depth + 1, isMin) }) + num[depth][pos]);
-	}
-	return cache[isMin][depth][pos].emplace(
-		func({ dp(1, depth + 1, isMin),
-			dp(2, depth + 1, isMin) }) + num[depth][pos]);
-}
+int cache[2][3];
 
 int main()
 {
 	fastip; sws;
 
 	cin >> n;
-	for (int i = 1; i <= n; ++i) {
+	for (int i = 0; i < n; ++i) {
 		cin >> num[i][0] >> num[i][1] >> num[i][2];
 	}
-	cout << dp(1, 0, 0) << " " << dp(1, 0, 1);
+	cache[0][0] = num[n - 1][0]; 
+	cache[0][1] = num[n - 1][1]; 
+	cache[0][2] = num[n - 1][2];
+	for (int i = n - 2; i >= 0; --i) {
+		cache[1][0] = num[i][0] + max(cache[0][0], cache[0][1]);
+		cache[1][1] = num[i][1] + max({ cache[0][0], cache[0][1], cache[0][2] });
+		cache[1][2] = num[i][2] + max(cache[0][1], cache[0][2]);
+		memcpy(cache[0], cache[1], sizeof(int) * 3);
+	}
+	cout << max({ cache[0][0], cache[0][1], cache[0][2] }) << " ";
+
+	cache[0][0] = num[n - 1][0];
+	cache[0][1] = num[n - 1][1];
+	cache[0][2] = num[n - 1][2];
+	for (int i = n - 2; i >= 0; --i) {
+		cache[1][0] = num[i][0] + min(cache[0][0], cache[0][1]);
+		cache[1][1] = num[i][1] + min({ cache[0][0], cache[0][1], cache[0][2] });
+		cache[1][2] = num[i][2] + min(cache[0][1], cache[0][2]);
+		memcpy(cache[0], cache[1], sizeof(int) * 3);
+	}
+	cout << min({ cache[0][0], cache[0][1], cache[0][2] }) << " ";
 }

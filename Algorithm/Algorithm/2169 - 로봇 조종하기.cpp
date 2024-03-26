@@ -13,7 +13,7 @@ int cache[1010][1010][3];
 int field[1010][1010];
 int n, m;
 
-// direction 0일 시 좌우 이동 가능, 
+// direction 0일 시 좌우 이동 가능,
 // 1일 시 우로만 이동 가능, 
 // 2일 시 좌로만 이동 가능
 int dp(int direction, int y, int x)
