@@ -1083,6 +1083,12 @@
     <ClCompile Include="18869 - 멀티버스 Ⅱ.cpp">
       <Filter>소스 파일\Sort</Filter>
     </ClCompile>
+    <ClCompile Include="5373 - 큐빙.cpp">
+      <Filter>소스 파일\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 1520 - 내리막 길.cpp">
+      <Filter>소스 파일\Dynamic Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
