@@ -1080,6 +1080,9 @@
     <ClCompile Include="7795 - 먹을 것인가 먹힐 것인가.cpp">
       <Filter>소스 파일\Sort</Filter>
     </ClCompile>
+    <ClCompile Include="18869 - 멀티버스 Ⅱ.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
