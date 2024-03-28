@@ -1113,6 +1113,9 @@
     <ClCompile Include="2533 - 사회망 서비스(SNS).cpp">
       <Filter>소스 파일\Dynamic Programming\Tree</Filter>
     </ClCompile>
+    <ClCompile Include="15681 - 트리와 쿼리.cpp">
+      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
