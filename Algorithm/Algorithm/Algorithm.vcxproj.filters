@@ -136,6 +136,9 @@
     <Filter Include="소스 파일\Dynamic Programming\재시도">
       <UniqueIdentifier>{4054c46c-2b3d-4912-8e81-1d0d7f4dd267}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Dynamic Programming\Tree">
+      <UniqueIdentifier>{a9a73bd6-aa07-44b4-851a-13268c4d887b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -1103,6 +1106,12 @@
     </ClCompile>
     <ClCompile Include="2240 - 자두나무.cpp">
       <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="1082 - 방 번호.cpp">
+      <Filter>소스 파일\미분류</Filter>
+    </ClCompile>
+    <ClCompile Include="2533 - 사회망 서비스(SNS).cpp">
+      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
