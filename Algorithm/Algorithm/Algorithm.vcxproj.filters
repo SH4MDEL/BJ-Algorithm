@@ -1125,6 +1125,9 @@
     <ClCompile Include="1099 - 알 수 없는 문장.cpp">
       <Filter>소스 파일\Dynamic Programming\~9999</Filter>
     </ClCompile>
+    <ClCompile Include="7812 - 중앙 트리.cpp">
+      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
