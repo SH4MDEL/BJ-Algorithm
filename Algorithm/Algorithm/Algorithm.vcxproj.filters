@@ -1119,6 +1119,12 @@
     <ClCompile Include="14267 - 회사 문화 1.cpp">
       <Filter>소스 파일\Dynamic Programming\Tree</Filter>
     </ClCompile>
+    <ClCompile Include="17831 - 대기업 승범이네.cpp">
+      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="1099 - 알 수 없는 문장.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
