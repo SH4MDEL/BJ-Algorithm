@@ -1149,6 +1149,9 @@
     <ClCompile Include="18244 - 변형 계단 수.cpp">
       <Filter>소스 파일\Dynamic Programming\10000~</Filter>
     </ClCompile>
+    <ClCompile Include="1799 - 비숍.cpp">
+      <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
