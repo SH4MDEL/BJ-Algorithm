@@ -139,6 +139,9 @@
     <Filter Include="소스 파일\Dynamic Programming\Tree">
       <UniqueIdentifier>{a9a73bd6-aa07-44b4-851a-13268c4d887b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Geometry\Convex Hull">
+      <UniqueIdentifier>{2927f880-d7e3-4228-be3d-ab759cdbce14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -1130,6 +1133,21 @@
     </ClCompile>
     <ClCompile Include="14888 - 연산자 끼워넣기.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="11060 - 점프 점프.cpp">
+      <Filter>소스 파일\Dynamic Programming\10000~</Filter>
+    </ClCompile>
+    <ClCompile Include="16571 - 알파 틱택토.cpp">
+      <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="1708 - 볼록 껍질.cpp">
+      <Filter>소스 파일\Geometry\Convex Hull</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 17386 - 선분 교차 1.cpp">
+      <Filter>소스 파일\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="18244 - 변형 계단 수.cpp">
+      <Filter>소스 파일\Dynamic Programming\10000~</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
