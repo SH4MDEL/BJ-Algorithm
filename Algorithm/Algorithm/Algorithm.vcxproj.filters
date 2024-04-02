@@ -1152,6 +1152,18 @@
     <ClCompile Include="1799 - 비숍.cpp">
       <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
+    <ClCompile Include="9252 - LCS 2.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="1208 - 부분수열의 합 2.cpp">
+      <Filter>소스 파일\Bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="1761 - 정점들의 거리.cpp">
+      <Filter>소스 파일\LCA</Filter>
+    </ClCompile>
+    <ClCompile Include="24313 - 알고리즘 수업 - 점근적 표기 1.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
