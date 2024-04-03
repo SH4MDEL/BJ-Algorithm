@@ -1170,6 +1170,12 @@
     <ClCompile Include="13241 - 최소공배수.cpp">
       <Filter>소스 파일\Math\Number Theory</Filter>
     </ClCompile>
+    <ClCompile Include="2482 - 색상환.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="1398 - 동전 문제.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
