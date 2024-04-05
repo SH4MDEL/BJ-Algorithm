@@ -1176,6 +1176,24 @@
     <ClCompile Include="1398 - 동전 문제.cpp">
       <Filter>소스 파일\Dynamic Programming\~9999</Filter>
     </ClCompile>
+    <ClCompile Include="1735 - 분수 합.cpp">
+      <Filter>소스 파일\Math\Number Theory</Filter>
+    </ClCompile>
+    <ClCompile Include="14675 - 단절점과 단절선.cpp">
+      <Filter>소스 파일\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="1821 - 수들의 합 6.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="2305 - 자리 배치.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 2473 - 세 용액.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
+    <ClCompile Include="13392 - 방법을 출력하지 않는 숫자 맞추기.cpp">
+      <Filter>소스 파일\Dynamic Programming\10000~</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
