@@ -405,9 +405,6 @@
     <ClCompile Include="16993 - 연속합과 쿼리.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
-    <ClCompile Include="13925- 수열과 쿼리 13.cpp">
-      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
-    </ClCompile>
     <ClCompile Include="6213 - Balanced Lineup.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
@@ -1193,6 +1190,12 @@
     </ClCompile>
     <ClCompile Include="13392 - 방법을 출력하지 않는 숫자 맞추기.cpp">
       <Filter>소스 파일\Dynamic Programming\10000~</Filter>
+    </ClCompile>
+    <ClCompile Include="2494 - 숫자 맞추기.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="4134 - 다음 소수.cpp">
+      <Filter>소스 파일\Math\primality</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
