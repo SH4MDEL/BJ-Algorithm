@@ -148,6 +148,9 @@
     <Filter Include="소스 파일\Container\Deque">
       <UniqueIdentifier>{136347ec-5c37-46da-baef-feff5f186226}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Segment Tree\Lazy Propagation\Euler Tour Technique">
+      <UniqueIdentifier>{0c02a34c-8de7-41bb-b3f5-68a0b00a6dea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -1214,6 +1217,9 @@
     </ClCompile>
     <ClCompile Include="9345 - 디지털 비디오 디스크(DVDs).cpp">
       <Filter>소스 파일\Segment Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="2820 - 자동차 공장.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation\Euler Tour Technique</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
