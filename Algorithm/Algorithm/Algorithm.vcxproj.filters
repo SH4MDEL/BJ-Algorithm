@@ -1197,6 +1197,9 @@
     <ClCompile Include="4134 - 다음 소수.cpp">
       <Filter>소스 파일\Math\primality</Filter>
     </ClCompile>
+    <ClCompile Include="17103 - 골드바흐 파티션.cpp">
+      <Filter>소스 파일\Math\primality</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
