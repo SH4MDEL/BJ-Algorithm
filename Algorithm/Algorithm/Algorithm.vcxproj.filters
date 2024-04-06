@@ -1206,6 +1206,9 @@
     <ClCompile Include="13909 - 창문 닫기.cpp">
       <Filter>소스 파일\Math</Filter>
     </ClCompile>
+    <ClCompile Include="2346 - 풍선 터트리기.cpp">
+      <Filter>소스 파일\Container\Deque</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
