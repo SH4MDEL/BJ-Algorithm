@@ -1221,6 +1221,9 @@
     <ClCompile Include="2820 - 자동차 공장.cpp">
       <Filter>소스 파일\Segment Tree\Lazy Propagation\Euler Tour Technique</Filter>
     </ClCompile>
+    <ClCompile Include="14268 - 회사 문화 2.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation\Euler Tour Technique</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
