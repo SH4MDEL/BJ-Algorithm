@@ -67,9 +67,6 @@
     <Filter Include="소스 파일\Simulation">
       <UniqueIdentifier>{67f760e4-45ab-4fdb-a327-062cca0b9802}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Deque">
-      <UniqueIdentifier>{136347ec-5c37-46da-baef-feff5f186226}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\아레나">
       <UniqueIdentifier>{28f33b7a-b1f6-4a5b-ba28-d0bf64ea633f}</UniqueIdentifier>
     </Filter>
@@ -147,6 +144,9 @@
     </Filter>
     <Filter Include="소스 파일\Container\hash_set">
       <UniqueIdentifier>{0623a75b-b828-4fb8-8b3c-afdfe6d0b0fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Container\Deque">
+      <UniqueIdentifier>{136347ec-5c37-46da-baef-feff5f186226}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -586,7 +586,7 @@
       <Filter>소스 파일\Container\Stack</Filter>
     </ClCompile>
     <ClCompile Include="1021 - 회전하는 큐.cpp">
-      <Filter>소스 파일\Deque</Filter>
+      <Filter>소스 파일\Container\Deque</Filter>
     </ClCompile>
     <ClCompile Include="2493 - 탑.cpp">
       <Filter>소스 파일\Stack</Filter>
@@ -1200,8 +1200,11 @@
     <ClCompile Include="17103 - 골드바흐 파티션.cpp">
       <Filter>소스 파일\Math\primality</Filter>
     </ClCompile>
+    <ClCompile Include="12789 - 도키도키 간식드리미.cpp">
+      <Filter>소스 파일\Container\Stack</Filter>
+    </ClCompile>
     <ClCompile Include="13909 - 창문 닫기.cpp">
-      <Filter>소스 파일\Math\primality</Filter>
+      <Filter>소스 파일\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
