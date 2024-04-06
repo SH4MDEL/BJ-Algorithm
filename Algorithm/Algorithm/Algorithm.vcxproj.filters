@@ -1209,6 +1209,9 @@
     <ClCompile Include="2346 - 풍선 터트리기.cpp">
       <Filter>소스 파일\Container\Deque</Filter>
     </ClCompile>
+    <ClCompile Include="24511 - queuestack.cpp">
+      <Filter>소스 파일\Container\Deque</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
