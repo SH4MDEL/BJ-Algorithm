@@ -1200,6 +1200,9 @@
     <ClCompile Include="17103 - 골드바흐 파티션.cpp">
       <Filter>소스 파일\Math\primality</Filter>
     </ClCompile>
+    <ClCompile Include="13909 - 창문 닫기.cpp">
+      <Filter>소스 파일\Math\primality</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
