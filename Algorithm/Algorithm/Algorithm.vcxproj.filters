@@ -1236,6 +1236,9 @@
     <ClCompile Include="10070 - 벽.cpp">
       <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
     </ClCompile>
+    <ClCompile Include="27336 - ジョイ四人組 (JOI04).cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
