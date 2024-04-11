@@ -154,6 +154,9 @@
     <Filter Include="소스 파일\Graph\Network Flow">
       <UniqueIdentifier>{253d9709-5fa4-4ddf-ba61-0109fa80fd45}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Segment Tree\Merge Sort Tree">
+      <UniqueIdentifier>{19d0983f-c941-4dd7-baef-3f1d7ac490e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -1241,6 +1244,33 @@
     </ClCompile>
     <ClCompile Include="16954 - 움직이는 미로 탈출.cpp">
       <Filter>소스 파일\Graph\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1300 - K번째 수.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
+    <ClCompile Include="1509 - 팰린드롬 분할.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="17835 - 면접보는 승범이네.cpp">
+      <Filter>소스 파일\Graph\Dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="2580 - 스도쿠.cpp">
+      <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="2565 - 전깃줄.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="13537 - 수열과 쿼리 1.cpp">
+      <Filter>소스 파일\Segment Tree\Merge Sort Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="13544 - 수열과 쿼리 3.cpp">
+      <Filter>소스 파일\Segment Tree\Merge Sort Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="12858 - Range GCD.cpp">
+      <Filter>소스 파일\Segment Tree\Lazy Propagation</Filter>
+    </ClCompile>
+    <ClCompile Include="12904 - A와 B.cpp">
+      <Filter>소스 파일\Greedy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
