@@ -1287,6 +1287,9 @@
     <ClCompile Include="10216 - Count Circle Groups.cpp">
       <Filter>소스 파일\Union Find</Filter>
     </ClCompile>
+    <ClCompile Include="2254 - 감옥 건설.cpp">
+      <Filter>소스 파일\Math\Geometry\Convex Hull</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
