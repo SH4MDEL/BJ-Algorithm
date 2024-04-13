@@ -408,9 +408,6 @@
     <ClCompile Include="13546 - 수열과 쿼리 4.cpp">
       <Filter>소스 파일\Segment Tree\Offline Query</Filter>
     </ClCompile>
-    <ClCompile Include="13545 - 수열과 쿼리 0.cpp">
-      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
-    </ClCompile>
     <ClCompile Include="16993 - 연속합과 쿼리.cpp">
       <Filter>소스 파일\Segment Tree</Filter>
     </ClCompile>
@@ -1289,6 +1286,12 @@
     </ClCompile>
     <ClCompile Include="2254 - 감옥 건설.cpp">
       <Filter>소스 파일\Math\Geometry\Convex Hull</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 13546 - 수열과 쿼리 4.cpp">
+      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
+    </ClCompile>
+    <ClCompile Include="13545 - 수열과 쿼리 0.cpp">
+      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
