@@ -1293,6 +1293,12 @@
     <ClCompile Include="13545 - 수열과 쿼리 0.cpp">
       <Filter>소스 파일\Segment Tree\Offline Query</Filter>
     </ClCompile>
+    <ClCompile Include="14897 - 서로 다른 수와 쿼리 1.cpp">
+      <Filter>소스 파일\Segment Tree\Offline Query</Filter>
+    </ClCompile>
+    <ClCompile Include="10830 - 행렬 제곱.cpp">
+      <Filter>소스 파일\Divide and Conquer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
