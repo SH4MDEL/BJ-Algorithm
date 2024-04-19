@@ -1332,6 +1332,12 @@
     <ClCompile Include="1644 - 소수의 연속합.cpp">
       <Filter>소스 파일\Math\primality</Filter>
     </ClCompile>
+    <ClCompile Include="1963 - 소수 경로.cpp">
+      <Filter>소스 파일\Math\primality</Filter>
+    </ClCompile>
+    <ClCompile Include="1949 - 우수 마을.cpp">
+      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

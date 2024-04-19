@@ -32,12 +32,8 @@ int main()
 	}
 	int s = 0, e = 0, sum = 0, ans = 0;
 	while (s <= e && e <= m) {
-		if (sum < n) {
-			sum += primeNum[e++];
-		}
-		else {
-			sum -= primeNum[s++];
-		}
+		if (sum < n) sum += primeNum[e++];
+		else sum -= primeNum[s++];
 		if (sum == n) ++ans;
 	}
 	cout << ans;
