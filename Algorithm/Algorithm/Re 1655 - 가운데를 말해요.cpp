@@ -23,24 +23,21 @@ int main()
     while (n--) {
         int a; cin >> a;
         if ((l.size() + r.size()) % 2) {
-            // r
             if (a > r.top()) r.push(a);
             else {
                 l.push(a);
                 r.push(l.top());
                 l.pop();
             }
-            cout << " " << l.top() << endl;
         }
         else {
-            // l
             if (a < l.top()) l.push(a);
             else {
                 r.push(a);
                 l.push(r.top());
                 r.pop();
             }
-            cout << " " << l.top() << endl;
         }
+        cout << l.top() << endl;
     }
 }
