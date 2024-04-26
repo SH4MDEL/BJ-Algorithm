@@ -1377,6 +1377,12 @@
     <ClCompile Include="2110 - 공유기 설치.cpp">
       <Filter>소스 파일\Binary Search</Filter>
     </ClCompile>
+    <ClCompile Include="1253 - 좋다.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
+    <ClCompile Include="7469 - K번째 수.cpp">
+      <Filter>소스 파일\Data Structure\Segment Tree\Merge Sort Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">

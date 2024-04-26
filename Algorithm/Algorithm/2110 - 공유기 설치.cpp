@@ -16,11 +16,10 @@ vector<int> v;
 
 bool check(int dist, int least)
 {
-    int length = dist;// 1 2 4 8 9
+    int length = dist;
     if (!--least) return true;
     for (auto i : to(n) | views::drop(1)) {
         if (v[i] - v[i - 1] > length) {
-            cout << length << ", " << v[i] - v[i - 1] << endl;
             if (!--least) return true;
             length = dist;
         }
