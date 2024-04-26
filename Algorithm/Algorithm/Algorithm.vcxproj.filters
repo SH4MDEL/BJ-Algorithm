@@ -1374,6 +1374,9 @@
     <ClCompile Include="1072 - 게임.cpp">
       <Filter>소스 파일\Binary Search</Filter>
     </ClCompile>
+    <ClCompile Include="2110 - 공유기 설치.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bitmask.txt">
