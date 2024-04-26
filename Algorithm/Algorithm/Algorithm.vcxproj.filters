@@ -76,9 +76,6 @@
     <Filter Include="소스 파일\Dynamic Programming\재시도">
       <UniqueIdentifier>{4054c46c-2b3d-4912-8e81-1d0d7f4dd267}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Dynamic Programming\Tree">
-      <UniqueIdentifier>{a9a73bd6-aa07-44b4-851a-13268c4d887b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Math\primality">
       <UniqueIdentifier>{04191864-c694-4c8a-bf40-4377c8ad52d6}</UniqueIdentifier>
     </Filter>
@@ -159,6 +156,15 @@
     </Filter>
     <Filter Include="소스 파일\Graph\Topological Sort">
       <UniqueIdentifier>{7cfa7db4-e6fb-494e-aa4a-64cfb2aa50ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game Theory">
+      <UniqueIdentifier>{fac3fe35-dd7a-4437-8acc-11c869ea47a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Dynamic Programming\bitfield dp">
+      <UniqueIdentifier>{6661e6a0-ebb8-4a56-963a-4152d593e754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Dynamic Programming\tree dp">
+      <UniqueIdentifier>{a9a73bd6-aa07-44b4-851a-13268c4d887b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -474,9 +480,6 @@
     <ClCompile Include="1311 - 할 일 정하기 1.cpp">
       <Filter>소스 파일\bitmask</Filter>
     </ClCompile>
-    <ClCompile Include="2098 - 외판원 순회.cpp">
-      <Filter>소스 파일\bitmask</Filter>
-    </ClCompile>
     <ClCompile Include="1562 - 계단 수.cpp">
       <Filter>소스 파일\bitmask</Filter>
     </ClCompile>
@@ -785,9 +788,6 @@
     </ClCompile>
     <ClCompile Include="Re 4485 - 녹색 옷 입은 애가 젤다지.cpp">
       <Filter>소스 파일\Graph\Dijkstra</Filter>
-    </ClCompile>
-    <ClCompile Include="1176 - 섞기.cpp">
-      <Filter>소스 파일\bitmask</Filter>
     </ClCompile>
     <ClCompile Include="17081 - RPG Extreme.cpp">
       <Filter>소스 파일\Implementation\Simulation</Filter>
@@ -1117,31 +1117,28 @@
       <Filter>소스 파일\미분류</Filter>
     </ClCompile>
     <ClCompile Include="2533 - 사회망 서비스(SNS).cpp">
-      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+      <Filter>소스 파일\Dynamic Programming\tree dp</Filter>
     </ClCompile>
     <ClCompile Include="15681 - 트리와 쿼리.cpp">
-      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+      <Filter>소스 파일\Dynamic Programming\tree dp</Filter>
     </ClCompile>
     <ClCompile Include="14267 - 회사 문화 1.cpp">
-      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+      <Filter>소스 파일\Dynamic Programming\tree dp</Filter>
     </ClCompile>
     <ClCompile Include="17831 - 대기업 승범이네.cpp">
-      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+      <Filter>소스 파일\Dynamic Programming\tree dp</Filter>
     </ClCompile>
     <ClCompile Include="1099 - 알 수 없는 문장.cpp">
       <Filter>소스 파일\Dynamic Programming\~9999</Filter>
     </ClCompile>
     <ClCompile Include="7812 - 중앙 트리.cpp">
-      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+      <Filter>소스 파일\Dynamic Programming\tree dp</Filter>
     </ClCompile>
     <ClCompile Include="14888 - 연산자 끼워넣기.cpp">
       <Filter>소스 파일\Bruteforce</Filter>
     </ClCompile>
     <ClCompile Include="11060 - 점프 점프.cpp">
       <Filter>소스 파일\Dynamic Programming\10000~</Filter>
-    </ClCompile>
-    <ClCompile Include="16571 - 알파 틱택토.cpp">
-      <Filter>소스 파일\Backtracking</Filter>
     </ClCompile>
     <ClCompile Include="1708 - 볼록 껍질.cpp">
       <Filter>소스 파일\Math\Geometry\Convex Hull</Filter>
@@ -1326,9 +1323,6 @@
     <ClCompile Include="1802 - 종이 접기.cpp">
       <Filter>소스 파일\Recursion</Filter>
     </ClCompile>
-    <ClCompile Include="7983 - 내일 할거야.cpp">
-      <Filter>소스 파일\Greedy</Filter>
-    </ClCompile>
     <ClCompile Include="1644 - 소수의 연속합.cpp">
       <Filter>소스 파일\Math\primality</Filter>
     </ClCompile>
@@ -1336,7 +1330,49 @@
       <Filter>소스 파일\Math\primality</Filter>
     </ClCompile>
     <ClCompile Include="1949 - 우수 마을.cpp">
-      <Filter>소스 파일\Dynamic Programming\Tree</Filter>
+      <Filter>소스 파일\Dynamic Programming\tree dp</Filter>
+    </ClCompile>
+    <ClCompile Include="1377 - 버블 소트.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="2075 - N번째 큰 수.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="17615 - 볼 모으기.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 1655 - 가운데를 말해요.cpp">
+      <Filter>소스 파일\Data Structure\Priority Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="2036 - 수열의 점수.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1407 - 2로 몇 번 나누어질까.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="16571 - 알파 틱택토.cpp">
+      <Filter>소스 파일\Game Theory</Filter>
+    </ClCompile>
+    <ClCompile Include="17080 - 결함 게임.cpp">
+      <Filter>소스 파일\Game Theory</Filter>
+    </ClCompile>
+    <ClCompile Include="1103 - 게임.cpp">
+      <Filter>소스 파일\Dynamic Programming\~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="1670 - 정상 회담 2.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="1102 - 발전소.cpp">
+      <Filter>소스 파일\Dynamic Programming\bitfield dp</Filter>
+    </ClCompile>
+    <ClCompile Include="2098 - 외판원 순회.cpp">
+      <Filter>소스 파일\Dynamic Programming\bitfield dp</Filter>
+    </ClCompile>
+    <ClCompile Include="1176 - 섞기.cpp">
+      <Filter>소스 파일\Dynamic Programming\bitfield dp</Filter>
+    </ClCompile>
+    <ClCompile Include="1072 - 게임.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
