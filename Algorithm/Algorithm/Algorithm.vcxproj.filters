@@ -166,6 +166,12 @@
     <Filter Include="소스 파일\Dynamic Programming\tree dp">
       <UniqueIdentifier>{a9a73bd6-aa07-44b4-851a-13268c4d887b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Binary Search\meet in the middle">
+      <UniqueIdentifier>{b0cfd2d4-1481-4d90-86ae-7b3801f7107f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\string\Rabin-Karp">
+      <UniqueIdentifier>{12ad143e-3c26-4e26-9f11-550020f7fa05}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3085 - 사탕 게임.cpp">
@@ -672,13 +678,7 @@
     <ClCompile Include="14442 - 벽 부수고 이동하기 2.cpp">
       <Filter>소스 파일\Graph\BFS</Filter>
     </ClCompile>
-    <ClCompile Include="2295 - 세 수의 합.cpp">
-      <Filter>소스 파일\Binary Search</Filter>
-    </ClCompile>
     <ClCompile Include="1822 - 차집합.cpp">
-      <Filter>소스 파일\Binary Search</Filter>
-    </ClCompile>
-    <ClCompile Include="7453 - 합이 0인 네 정수.cpp">
       <Filter>소스 파일\Binary Search</Filter>
     </ClCompile>
     <ClCompile Include="1613 - 역사.cpp">
@@ -1155,9 +1155,6 @@
     <ClCompile Include="9252 - LCS 2.cpp">
       <Filter>소스 파일\Dynamic Programming\~9999</Filter>
     </ClCompile>
-    <ClCompile Include="1208 - 부분수열의 합 2.cpp">
-      <Filter>소스 파일\Bruteforce</Filter>
-    </ClCompile>
     <ClCompile Include="1761 - 정점들의 거리.cpp">
       <Filter>소스 파일\sparse_table\LCA</Filter>
     </ClCompile>
@@ -1382,6 +1379,60 @@
     </ClCompile>
     <ClCompile Include="7469 - K번째 수.cpp">
       <Filter>소스 파일\Data Structure\Segment Tree\Merge Sort Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="1981 - 배열에서 이동.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
+    <ClCompile Include="1339 - 단어 수학.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1744 - 수 묶기.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="3745 - 오름세.cpp">
+      <Filter>소스 파일\Data Structure\Segment Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="2873 - 롤러코스터.cpp">
+      <Filter>소스 파일\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="6568 - 귀도 반 로썸은 크리스마스날 심심하다고 파이썬을 만들었다.cpp">
+      <Filter>소스 파일\Implementation\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="23978 - 급상승.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Re 2252 - 줄 세우기.cpp">
+      <Filter>소스 파일\Graph\Topological Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="2848 - 알고스팟어.cpp">
+      <Filter>소스 파일\Graph\Topological Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="16457 - 단풍잎 이야기.cpp">
+      <Filter>소스 파일\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="16564 - 히오스 프로게이머.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
+    <ClCompile Include="7453 - 합이 0인 네 정수.cpp">
+      <Filter>소스 파일\Binary Search\meet in the middle</Filter>
+    </ClCompile>
+    <ClCompile Include="1208 - 부분수열의 합 2.cpp">
+      <Filter>소스 파일\Binary Search\meet in the middle</Filter>
+    </ClCompile>
+    <ClCompile Include="2295 - 세 수의 합.cpp">
+      <Filter>소스 파일\Binary Search\meet in the middle</Filter>
+    </ClCompile>
+    <ClCompile Include="15954 - 인형들.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="15992 - 1, 2, 3 더하기 7.cpp">
+      <Filter>소스 파일\Dynamic Programming\10000~</Filter>
+    </ClCompile>
+    <ClCompile Include="1114 - 통나무 자르기.cpp">
+      <Filter>소스 파일\Binary Search</Filter>
+    </ClCompile>
+    <ClCompile Include="1507 - 궁금한 민호.cpp">
+      <Filter>소스 파일\Graph\Floyd-Warshall</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
