@@ -12,7 +12,9 @@ ll n, p, q, x, y;
 
 ll dp(ll now)
 {
-	if (now <= 0) return 1;
+	if (cache.count(now)) return cache[now];
+	if (now <= 0) return cache[now] = 1;
+
 	return cache[now] = dp(now / p - x) + dp(now / q - y);
 }
 
