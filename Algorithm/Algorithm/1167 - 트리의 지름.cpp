@@ -13,12 +13,9 @@ using namespace std;
 int v;
 vector<tuple<int, int>> children[100100];
 
-// 내 자식들 중 가장 먼 두놈 or 나를 종점으로 하는 가장 먼 놈까지 거리.
 tuple<int, int> search(int me, int parent)
 {
-	if (parent != -1 && children[me].size() == 1) {
-		return {0, 0};
-	}
+	if (parent != -1 && children[me].size() == 1) return {0, 0};
 
 	int maxround = 0, maxway1 = 0, maxway2 = 0;
 	for (const auto& [child, dist] : children[me]) {
