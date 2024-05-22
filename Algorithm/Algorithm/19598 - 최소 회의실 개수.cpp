@@ -13,7 +13,8 @@ int n;
 struct Work {
 	int s, e;
 	bool operator<(const Work& rhs) const {
-		return e < rhs.e;
+		if (s == rhs.s) return e < rhs.e;
+		return s < rhs.s;
 	}
 };
 priority_queue<int, vector<int>, greater<int>> pq;
@@ -32,12 +33,8 @@ int main()
 	pq.push(0);
 	for (const auto& e : v) {
 		auto now = pq.top(); pq.pop();
-		if (e.s < now) {
-			pq.push(e.e);
-		}
-		else {
-			now = e.e;
-		}
+		if (e.s < now) pq.push(e.e);
+		else now = e.e;
 		pq.push(now);
 	}
 	cout << pq.size();
