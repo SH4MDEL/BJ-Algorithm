@@ -8,8 +8,8 @@
 #define endl "\n"
 using namespace std;
 
-int n, num, ans;
-stack<int> s;
+ll n, num, ans;
+stack<ll> s;
 
 int main()
 {
